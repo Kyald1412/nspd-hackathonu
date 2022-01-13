@@ -1,0 +1,21 @@
+{
+    "code": 200,
+    "message": "Authentication is success",
+    "data": {
+        "uid": "17",
+        "fname": "Hunginda",
+        "lname": "Hungi",
+        "email": "testing3@gmail.com",
+        "gender": "0",
+        "province_id": "",
+        "country_id": "1",
+        "phone_country": "62",
+        "phone": "812345678",
+        "lang": "en",
+        "img_url": "https://s3-ap-southeast-1.amazonaws.com/smartcheckin.userphoto/user_smartcheckin12313123asdad_1620372360-5s8hq.jpeg",
+        "status": "1",
+        "firebase_id": "",
+        "referral": "",
+        "token": "9b3336bd31b3d90903cab757279be892efef0796"
+    }
+}

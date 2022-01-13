@@ -1,0 +1,25 @@
+xcassets:
+  - inputs:
+      - Asa/Resources/Colors.xcassets
+      - Asa/Resources/Assets.xcassets
+    outputs:
+      - templatePath: xcassets-swiftui.stencil
+        output: Asa/Resources/Assets+Extension.swift
+      - templatePath: asset-to-image-extension.stencil
+        output: Asa/Resources/UIImage+Extension.swift
+        params:
+          enumName: UIImage
+          publicAccess: true
+          allValues: true
+      - templatePath: asset-to-color-extension.stencil
+        output: Asa/Resources/UIColor+Extension.swift
+        params:
+          enumName: UIColor
+          publicAccess: true
+          allValues: true
+        
+strings:
+  inputs: Asa/Resources/en.lproj
+  outputs:
+    - templatePath: language-extension.stencil
+      output: Asa/Resources/L10n.swift
