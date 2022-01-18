@@ -16,3 +16,13 @@ $ pod install
 $ brew update
 $ brew install swiftgen
 ```
+
+
+### Tech stack
+```bash
+- Dependency Injection
+- MVVM
+- Repository & Coordinator Pattern
+- Offline first
+- Multiple build scheme
+```
