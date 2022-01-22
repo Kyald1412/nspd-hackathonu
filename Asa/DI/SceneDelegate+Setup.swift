@@ -24,17 +24,24 @@ extension SceneDelegate {
         }
     }
     
-    // MARK: - View Controllers
-    internal func setupViewController() {
-        container.storyboardInitCompleted(LoginScene.self) { resolver, controller in
-            controller.loginViewModel = resolver.resolve(LoginViewModel.self)
-        }
-    }
-    
     // MARK: - View Model
     internal func setupViewModel() {
         container.register(LoginViewModel.self) { r in
             LoginViewModel(authUseCase: r.resolve(AuthUseCase.self))
         }
+        container.register(RegistrationViewModel.self) { r in
+            RegistrationViewModel(authUseCase: r.resolve(AuthUseCase.self))
+        }
     }
+    
+    // MARK: - View Controllers
+    internal func setupViewController() {
+        container.storyboardInitCompleted(LoginScene.self) { resolver, controller in
+            controller.loginViewModel = resolver.resolve(LoginViewModel.self)
+        }
+        container.storyboardInitCompleted(RegistrationScene.self) { resolver, controller in
+            controller.registrationViewModel = resolver.resolve(RegistrationViewModel.self)
+        }
+    }
+    
 }

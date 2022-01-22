@@ -31,11 +31,11 @@ final class AppCoordinator: BaseCoordinator {
     
     // MARK: - Init
     override func start() {
-        if isLoggedIn {
+//        if isLoggedIn {
             runLoginFlow()
-        } else {
-            runLoginFlow()
-        }
+//        } else {
+//            runLoginFlow()
+//        }
     }
     
     init(window: UIWindow, container: Container, navigationController: UINavigationController) {

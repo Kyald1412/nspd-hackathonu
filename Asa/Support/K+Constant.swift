@@ -29,8 +29,10 @@ public class KeychainWrapper {
     public func getAuthToken() -> String{
         return keychain[string: "token_auth"] ?? ""
     }
+    
 }
 
 public extension DefaultsKeys {
     var isLoggedIn: DefaultsKey<Bool> { .init("is_logged_in", defaultValue: false) }
+    var isSeenOnboarding: DefaultsKey<Bool> { .init("is_seen_onboarding", defaultValue: false) }
 }

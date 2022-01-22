@@ -1,30 +1,36 @@
 //
-//  LoginScene.swift
+//  RegistrationScene.swift
 //  Asa
 //
-//  Created by Dhiky Aldwiansyah on 13/01/22.
+//  Created by Dhiky Aldwiansyah on 20/01/22.
 //
 
-import Foundation
 import UIKit
 import Combine
+import Closures
 
-class LoginScene: UIViewController, SceneStoryboardLoadable {
-        
-    var loginViewModel: LoginViewModel!
+class RegistrationScene: UIViewController, SceneStoryboardLoadable {
+    
+    var registrationViewModel: RegistrationViewModel!
     private var cancellables = Set<AnyCancellable>()
     private var loadingView: LoadingView!
-
-    @IBAction func asd(_ sender: Any) {
-        self.loginViewModel.goToRegistration()
-    }
     
+    @IBOutlet weak var btnBack: UIBarButtonItem!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 //        loadingView = LoadingView(uiView: self.view, message: "")
 
         setupViewModel()
-        self.title = L10n.login
+        setupView()
+        
+        self.title = registrationViewModel.registrasiTitle
+    }
+    
+    func setupView() {
+        btnBack.onTap {
+            self.registrationViewModel.coordinator?.onBack()
+        }
     }
     
     func setupViewModel(){

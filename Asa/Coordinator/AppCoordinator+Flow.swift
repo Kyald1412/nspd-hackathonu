@@ -22,14 +22,14 @@ extension AppCoordinator {
         coordinator.start()
     }
     
-    func runHomeFlow() {
-//        let coordinator = HomeCoordinator(container: container, navigationController: navigationController)
-//        coordinator.finishFlow = { [unowned self, unowned coordinator] in
-//            self.removeDependency(coordinator)
-//            self.start()
-//        }
-//        addDependency(coordinator)
-//        coordinator.start()
+    func runRegistrationFlow() {
+        let coordinator = RegistrationCoordinator(container: container, navigationController: navigationController)
+        coordinator.finishFlow = { [unowned self, unowned coordinator] in
+            self.removeDependency(coordinator)
+            self.start()
+        }
+        addDependency(coordinator)
+        coordinator.start()
     }
     
 }

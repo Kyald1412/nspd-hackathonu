@@ -17,7 +17,7 @@ extension AuthService: TargetType {
     public var authorizationType: AuthorizationType? {
         switch self {
         case .login:
-            return .none
+            return .bearer
         }
     }
     
