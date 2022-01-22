@@ -32,13 +32,13 @@ open class LoginCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         self.navigationController = navigationController
     }
 
-    // MARK: - Private methods
-    func getLogin() -> LoginScene{
-        let viewController = container.resolveViewController(LoginScene.self)
-        return viewController
-    }
+//    // MARK: - Private methods
+//    func getLogin() -> LoginScene{
+//        let viewController = container.resolveViewController(LoginScene.self)
+//        return viewController
+//    }
     
-    private func showLogin() {
+    private func showLogin() {        
         let viewController = container.resolveViewController(LoginScene.self)
         viewController.loginViewModel.coordinator = self
         
@@ -50,20 +50,20 @@ open class LoginCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         navigationController.pushViewController(viewController, animated: true)
     }
     
-    private func showHomeView(){
-//        let coordinator = HomeCoordinator(container: container, navigationController: navigationController)
-//        coordinator.finishFlow = { [unowned self, unowned coordinator] in
-//            self.removeDependency(coordinator)
-//            self.start()
-//        }
-//        addDependency(coordinator)
-//        coordinator.start()
+    private func showRegistartion(title: String){
+        let coordinator = RegistrationCoordinator(container: container, navigationController: navigationController)
+        coordinator.finishFlow = { [unowned self, unowned coordinator] in
+            self.removeDependency(coordinator)
+            self.start()
+        }
+        addDependency(coordinator)
+        coordinator.start(registrasiTitle: title)
     }
 }
 
 protocol LoginInteface: AnyObject {
     func onBack()
-    func onHomeView()
+    func goToRegistration(title: String)
 }
 
 extension LoginCoordinator: LoginInteface {
@@ -72,8 +72,8 @@ extension LoginCoordinator: LoginInteface {
         self.navigationController.popViewController(animated: true)
     }
     
-    func onHomeView(){
-        showHomeView()
+    func goToRegistration(title: String){
+        showRegistartion(title: title)
     }
     
 }
