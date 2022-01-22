@@ -1,5 +1,5 @@
 //
-//  ScheduleListTableViewCell.swift
+//  StatementLetterListTableViewCell.swift
 //  Asa
 //
 //  Created by Jehnsen Hirena Kane on 22/01/22.
@@ -7,12 +7,13 @@
 
 import UIKit
 
-class ScheduleListTableViewCell: UITableViewCell {
+class StatementLetterListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var secondLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var reviewAndSignLabel: DesignableButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

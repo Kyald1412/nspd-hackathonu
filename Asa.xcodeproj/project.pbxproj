@@ -15,10 +15,14 @@
 		98746372279BF37000AC3287 /* TransplantationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746371279BF37000AC3287 /* TransplantationListViewModel.swift */; };
 		98746376279BF39A00AC3287 /* TransplantationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746374279BF39A00AC3287 /* TransplantationListTableViewCell.swift */; };
 		98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746375279BF39A00AC3287 /* TransplantationListTableViewCell.xib */; };
-		98746380279BFDC000AC3287 /* ScheduleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874637E279BFDC000AC3287 /* ScheduleListTableViewCell.swift */; };
-		98746381279BFDC000AC3287 /* ScheduleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9874637F279BFDC000AC3287 /* ScheduleListTableViewCell.xib */; };
 		98746383279C002E00AC3287 /* ScheduleListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746382279C002E00AC3287 /* ScheduleListCoordinator.swift */; };
 		98746385279C004500AC3287 /* ScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746384279C004500AC3287 /* ScheduleListViewModel.swift */; };
+		9874638D279C3DA400AC3287 /* StatementLetterListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874638C279C3DA400AC3287 /* StatementLetterListCoordinator.swift */; };
+		9874638F279C3DB500AC3287 /* StatementLetterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */; };
+		98746392279C3DD300AC3287 /* StatementLetterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */; };
+		98746393279C3DD300AC3287 /* StatementLetterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */; };
+		98CED47B279C412B00BD548C /* ScheduleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9874637F279BFDC000AC3287 /* ScheduleListTableViewCell.xib */; };
+		98CED47C279C413300BD548C /* ScheduleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */; };
 		9C410F835E47BE30AD243439 /* Pods_Asa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD698C5E2B09584B66E62DE /* Pods_Asa.framework */; };
 		BC1868ED2799384E00033B79 /* RegistrationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1868EC2799384E00033B79 /* RegistrationScene.swift */; };
 		BC1868EF2799385900033B79 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1868EE2799385900033B79 /* Registration.storyboard */; };
@@ -94,10 +98,14 @@
 		98746371279BF37000AC3287 /* TransplantationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListViewModel.swift; sourceTree = "<group>"; };
 		98746374279BF39A00AC3287 /* TransplantationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListTableViewCell.swift; sourceTree = "<group>"; };
 		98746375279BF39A00AC3287 /* TransplantationListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationListTableViewCell.xib; sourceTree = "<group>"; };
-		9874637E279BFDC000AC3287 /* ScheduleListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListTableViewCell.swift; sourceTree = "<group>"; };
 		9874637F279BFDC000AC3287 /* ScheduleListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleListTableViewCell.xib; sourceTree = "<group>"; };
 		98746382279C002E00AC3287 /* ScheduleListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListCoordinator.swift; sourceTree = "<group>"; };
 		98746384279C004500AC3287 /* ScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModel.swift; sourceTree = "<group>"; };
+		9874638C279C3DA400AC3287 /* StatementLetterListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListCoordinator.swift; sourceTree = "<group>"; };
+		9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListViewModel.swift; sourceTree = "<group>"; };
+		98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListTableViewCell.swift; sourceTree = "<group>"; };
+		98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementLetterListTableViewCell.xib; sourceTree = "<group>"; };
+		98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListTableViewCell.swift; sourceTree = "<group>"; };
 		9ABD5D21E357EF100398DB42 /* Pods_AsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77C4F7DE9390605366ED55A /* Pods-Asa-AsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa-AsaUITests.release.xcconfig"; path = "Target Support Files/Pods-Asa-AsaUITests/Pods-Asa-AsaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC1868EC2799384E00033B79 /* RegistrationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScene.swift; sourceTree = "<group>"; };
@@ -281,8 +289,51 @@
 		9874637D279BFD9400AC3287 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				9874637E279BFDC000AC3287 /* ScheduleListTableViewCell.swift */,
+				98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */,
 				9874637F279BFDC000AC3287 /* ScheduleListTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		98746387279C3D5C00AC3287 /* StatementLetterList */ = {
+			isa = PBXGroup;
+			children = (
+				9874638A279C3D7D00AC3287 /* View */,
+				98746389279C3D7100AC3287 /* ViewModel */,
+				98746388279C3D6900AC3287 /* Service */,
+			);
+			path = StatementLetterList;
+			sourceTree = "<group>";
+		};
+		98746388279C3D6900AC3287 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9874638C279C3DA400AC3287 /* StatementLetterListCoordinator.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		98746389279C3D7100AC3287 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9874638A279C3D7D00AC3287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9874638B279C3D8500AC3287 /* TableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9874638B279C3D8500AC3287 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */,
+				98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -290,6 +341,7 @@
 		98AD1598279BAE10002FF074 /* Transplantation */ = {
 			isa = PBXGroup;
 			children = (
+				98746387279C3D5C00AC3287 /* StatementLetterList */,
 				98AD159A279BAE24002FF074 /* TransplantationDetail */,
 				98AD1599279BAE1B002FF074 /* TransplantationList */,
 			);
@@ -756,13 +808,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC718C0A278DAD4700D7DDC6 /* LaunchScreen.storyboard in Resources */,
+				98746393279C3DD300AC3287 /* StatementLetterListTableViewCell.xib in Resources */,
 				BC1868EF2799385900033B79 /* Registration.storyboard in Resources */,
-				98746381279BFDC000AC3287 /* ScheduleListTableViewCell.xib in Resources */,
 				BCF1F7A6279009D200CFD5C4 /* BaseResponse.json in Resources */,
 				98746365279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib in Resources */,
 				BCF1F7A7279009D200CFD5C4 /* LoginResponse.json in Resources */,
 				BC718C34278DAEB700D7DDC6 /* Colors.xcassets in Resources */,
 				BCF1F749278FFBE200CFD5C4 /* Login.storyboard in Resources */,
+				98CED47B279C412B00BD548C /* ScheduleListTableViewCell.xib in Resources */,
 				BCF1F773278FFE5A00CFD5C4 /* Localizable.strings in Resources */,
 				BCF1F73E278FFB9900CFD5C4 /* .gitkeep in Resources */,
 				BC718C07278DAD4700D7DDC6 /* Assets.xcassets in Resources */,
@@ -820,6 +873,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF1F79F2790090D00CFD5C4 /* CoreDataStorage.swift in Sources */,
+				98746392279C3DD300AC3287 /* StatementLetterListTableViewCell.swift in Sources */,
 				BCF1F760278FFDDB00CFD5C4 /* Extension+UILabel.swift in Sources */,
 				BCF1F75D278FFDDB00CFD5C4 /* Extension+UIImage.swift in Sources */,
 				BCF1F734278FF6EC00CFD5C4 /* Coordinator.swift in Sources */,
@@ -841,9 +895,11 @@
 				98746370279BF34B00AC3287 /* TransplantationListCoordinator.swift in Sources */,
 				BCF1F771278FFE3700CFD5C4 /* Assets+Extension.swift in Sources */,
 				98746372279BF37000AC3287 /* TransplantationListViewModel.swift in Sources */,
+				9874638F279C3DB500AC3287 /* StatementLetterListViewModel.swift in Sources */,
 				BCF1F75F278FFDDB00CFD5C4 /* Extension+Int.swift in Sources */,
 				BCF1F72C278FF63F00CFD5C4 /* StoryboardLoadable.swift in Sources */,
 				BCF1F7962790073300CFD5C4 /* AuthRepository.swift in Sources */,
+				9874638D279C3DA400AC3287 /* StatementLetterListCoordinator.swift in Sources */,
 				BCF1F72E278FF64400CFD5C4 /* AppCoordinator+Flow.swift in Sources */,
 				98746364279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift in Sources */,
 				BCF1F78D2790071200CFD5C4 /* LoginRequest.swift in Sources */,
@@ -865,6 +921,7 @@
 				BCF1F7972790073300CFD5C4 /* AuthUseCase.swift in Sources */,
 				BCF1F75B278FFDDB00CFD5C4 /* Extension+UIColor.swift in Sources */,
 				BCF1F738278FF7AC00CFD5C4 /* K+Constant.swift in Sources */,
+				98CED47C279C413300BD548C /* ScheduleListTableViewCell.swift in Sources */,
 				BCF1F78E2790071200CFD5C4 /* UserData.swift in Sources */,
 				BCF1F75A278FFDDB00CFD5C4 /* Extension+UIViewController.swift in Sources */,
 				BCF1F75E278FFDDB00CFD5C4 /* NetworkState.swift in Sources */,
@@ -875,7 +932,6 @@
 				BC718C00278DAD4600D7DDC6 /* SceneDelegate.swift in Sources */,
 				BCF1F7A9279009D200CFD5C4 /* LoginResponseJson.swift in Sources */,
 				BCF1F730278FF64600CFD5C4 /* AppCoordinator.swift in Sources */,
-				98746380279BFDC000AC3287 /* ScheduleListTableViewCell.swift in Sources */,
 				BC1868ED2799384E00033B79 /* RegistrationScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

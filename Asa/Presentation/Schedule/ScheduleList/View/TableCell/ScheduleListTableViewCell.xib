@@ -79,6 +79,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="iRZ-0c-Ydn" id="irY-PK-HAz"/>
+                <outlet property="mainLabel" destination="4pn-XX-h8l" id="U1h-pJ-BED"/>
+                <outlet property="secondLabel" destination="KDV-cL-NpF" id="e0u-h2-muj"/>
+                <outlet property="timeLabel" destination="d4c-Jw-T0o" id="C0Y-hu-rgL"/>
+            </connections>
             <point key="canvasLocation" x="165.21739130434784" y="175.11160714285714"/>
         </tableViewCell>
     </objects>
