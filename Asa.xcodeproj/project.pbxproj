@@ -11,6 +11,10 @@
 		98746365279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746363279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib */; };
 		98746369279BF22A00AC3287 /* TransplantationDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746368279BF22A00AC3287 /* TransplantationDetailCoordinator.swift */; };
 		9874636B279BF24C00AC3287 /* TransplantationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874636A279BF24C00AC3287 /* TransplantationDetailViewModel.swift */; };
+		98746370279BF34B00AC3287 /* TransplantationListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874636F279BF34B00AC3287 /* TransplantationListCoordinator.swift */; };
+		98746372279BF37000AC3287 /* TransplantationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746371279BF37000AC3287 /* TransplantationListViewModel.swift */; };
+		98746376279BF39A00AC3287 /* TransplantationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746374279BF39A00AC3287 /* TransplantationListTableViewCell.swift */; };
+		98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746375279BF39A00AC3287 /* TransplantationListTableViewCell.xib */; };
 		9C410F835E47BE30AD243439 /* Pods_Asa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD698C5E2B09584B66E62DE /* Pods_Asa.framework */; };
 		BC1868ED2799384E00033B79 /* RegistrationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1868EC2799384E00033B79 /* RegistrationScene.swift */; };
 		BC1868EF2799385900033B79 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1868EE2799385900033B79 /* Registration.storyboard */; };
@@ -82,6 +86,10 @@
 		98746363279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailTableViewCell.xib; sourceTree = "<group>"; };
 		98746368279BF22A00AC3287 /* TransplantationDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailCoordinator.swift; sourceTree = "<group>"; };
 		9874636A279BF24C00AC3287 /* TransplantationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailViewModel.swift; sourceTree = "<group>"; };
+		9874636F279BF34B00AC3287 /* TransplantationListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListCoordinator.swift; sourceTree = "<group>"; };
+		98746371279BF37000AC3287 /* TransplantationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListViewModel.swift; sourceTree = "<group>"; };
+		98746374279BF39A00AC3287 /* TransplantationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListTableViewCell.swift; sourceTree = "<group>"; };
+		98746375279BF39A00AC3287 /* TransplantationListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationListTableViewCell.xib; sourceTree = "<group>"; };
 		9ABD5D21E357EF100398DB42 /* Pods_AsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77C4F7DE9390605366ED55A /* Pods-Asa-AsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa-AsaUITests.release.xcconfig"; path = "Target Support Files/Pods-Asa-AsaUITests/Pods-Asa-AsaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC1868EC2799384E00033B79 /* RegistrationScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScene.swift; sourceTree = "<group>"; };
@@ -187,6 +195,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9874636C279BF2E600AC3287 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				98746371279BF37000AC3287 /* TransplantationListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9874636D279BF2EC00AC3287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98746373279BF37500AC3287 /* TableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9874636E279BF2F000AC3287 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9874636F279BF34B00AC3287 /* TransplantationListCoordinator.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		98746373279BF37500AC3287 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				98746374279BF39A00AC3287 /* TransplantationListTableViewCell.swift */,
+				98746375279BF39A00AC3287 /* TransplantationListTableViewCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
 		98AD1598279BAE10002FF074 /* Transplantation */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +240,9 @@
 		98AD1599279BAE1B002FF074 /* TransplantationList */ = {
 			isa = PBXGroup;
 			children = (
+				9874636E279BF2F000AC3287 /* Service */,
+				9874636D279BF2EC00AC3287 /* View */,
+				9874636C279BF2E600AC3287 /* ViewModel */,
 			);
 			path = TransplantationList;
 			sourceTree = "<group>";
@@ -661,6 +705,7 @@
 				BCF1F773278FFE5A00CFD5C4 /* Localizable.strings in Resources */,
 				BCF1F73E278FFB9900CFD5C4 /* .gitkeep in Resources */,
 				BC718C07278DAD4700D7DDC6 /* Assets.xcassets in Resources */,
+				98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,7 +777,9 @@
 				BCF1F74B278FFBEA00CFD5C4 /* LoginViewModel.swift in Sources */,
 				BCF1F747278FFBDA00CFD5C4 /* LoginScene.swift in Sources */,
 				BC1868F3279938A100033B79 /* RegistrationCoordinator.swift in Sources */,
+				98746370279BF34B00AC3287 /* TransplantationListCoordinator.swift in Sources */,
 				BCF1F771278FFE3700CFD5C4 /* Assets+Extension.swift in Sources */,
+				98746372279BF37000AC3287 /* TransplantationListViewModel.swift in Sources */,
 				BCF1F75F278FFDDB00CFD5C4 /* Extension+Int.swift in Sources */,
 				BCF1F72C278FF63F00CFD5C4 /* StoryboardLoadable.swift in Sources */,
 				BCF1F7962790073300CFD5C4 /* AuthRepository.swift in Sources */,
@@ -758,6 +805,7 @@
 				BCF1F78E2790071200CFD5C4 /* UserData.swift in Sources */,
 				BCF1F75A278FFDDB00CFD5C4 /* Extension+UIViewController.swift in Sources */,
 				BCF1F75E278FFDDB00CFD5C4 /* NetworkState.swift in Sources */,
+				98746376279BF39A00AC3287 /* TransplantationListTableViewCell.swift in Sources */,
 				BCF1F72A278FF5C700CFD5C4 /* AppConfiguration.swift in Sources */,
 				BCF1F79E2790090A00CFD5C4 /* Asa.xcdatamodeld in Sources */,
 				BCF1F7A42790099300CFD5C4 /* UserEntity+CoreDataProperties copy.swift in Sources */,
