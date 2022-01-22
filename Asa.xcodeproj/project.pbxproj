@@ -170,6 +170,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		98AD1598279BAE10002FF074 /* Transplantation */ = {
+			isa = PBXGroup;
+			children = (
+				98AD159A279BAE24002FF074 /* TransplantationDetail */,
+				98AD1599279BAE1B002FF074 /* TransplantationList */,
+			);
+			path = Transplantation;
+			sourceTree = "<group>";
+		};
+		98AD1599279BAE1B002FF074 /* TransplantationList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TransplantationList;
+			sourceTree = "<group>";
+		};
+		98AD159A279BAE24002FF074 /* TransplantationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				98AD159D279BAE56002FF074 /* ViewModel */,
+				98AD159C279BAE50002FF074 /* View */,
+				98AD159B279BAE3D002FF074 /* Service */,
+			);
+			path = TransplantationDetail;
+			sourceTree = "<group>";
+		};
+		98AD159B279BAE3D002FF074 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		98AD159C279BAE50002FF074 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98AD159E279BAE74002FF074 /* TableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98AD159D279BAE56002FF074 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98AD159E279BAE74002FF074 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
 		BC718BF1278DAD4600D7DDC6 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +319,7 @@
 		BC718C32278DAE7E00D7DDC6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				98AD1598279BAE10002FF074 /* Transplantation */,
 				BCF1F74C278FFBEE00CFD5C4 /* Registration */,
 				BCF1F73F278FFBA900CFD5C4 /* Login */,
 				BCF1F73D278FFB9900CFD5C4 /* .gitkeep */,
