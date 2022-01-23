@@ -16,6 +16,10 @@ class LoginScene: UIViewController, SceneStoryboardLoadable {
     private var loadingView: LoadingView!
 
     @IBAction func asd(_ sender: Any) {
+        
+    }
+    
+    @IBAction func registrasiPressed(_ sender: Any) {
         self.loginViewModel.goToRegistration()
     }
     

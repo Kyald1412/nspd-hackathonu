@@ -26,7 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02V-5H-fhd">
                                 <rect key="frame" x="24" y="689" width="366" height="50"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Lanjutkan"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Lanjutkan">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="wbU-Rk-6lo">
                                 <rect key="frame" x="99.5" y="759" width="215" height="34.5"/>
