@@ -9,6 +9,9 @@ import UIKit
 
 class TransplantationListScene: UIViewController, SceneStoryboardLoadable {
 
+    @IBOutlet weak var notificationOutlet: UIButton!
+    @IBOutlet weak var profilePictureOutlet: UIButton!
+    @IBOutlet weak var tableViewOutlet: UITableView!
     var transplantationListViewModel: TransplantationListViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +19,11 @@ class TransplantationListScene: UIViewController, SceneStoryboardLoadable {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func notificationPressed(_ sender: Any) {
+    }
+    @IBAction func profilePicturePressed(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
