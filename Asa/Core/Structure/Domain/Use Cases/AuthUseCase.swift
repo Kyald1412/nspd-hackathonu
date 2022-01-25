@@ -65,7 +65,7 @@ public final class AuthUseCase: AuthUseCaseProtocol {
                 cached(response.toDomain())
                 
                 KeychainWrapper.shared.setAuthToken(token: response.token ?? "")
-                
+
                 completion(.success(response))
             case .failure(let error):
                 completion(.failure(error))

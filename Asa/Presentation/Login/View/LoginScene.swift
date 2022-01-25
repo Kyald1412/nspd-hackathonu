@@ -11,13 +11,12 @@ import Combine
 
 class LoginScene: UIViewController, SceneStoryboardLoadable {
         
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     var loginViewModel: LoginViewModel!
     private var cancellables = Set<AnyCancellable>()
     private var loadingView: LoadingView!
-
-    @IBAction func asd(_ sender: Any) {
-        
-    }
     
     @IBAction func registrasiPressed(_ sender: Any) {
         self.loginViewModel.goToRegistration()
@@ -27,10 +26,18 @@ class LoginScene: UIViewController, SceneStoryboardLoadable {
         super.viewDidLoad()
 //        loadingView = LoadingView(uiView: self.view, message: "")
 
+        setupView()
         setupViewModel()
         self.title = L10n.login
     }
     
+    @IBAction func revealPressed(_ sender: Any) {
+        (passwordTextField.isSecureTextEntry) ? (passwordTextField.isSecureTextEntry = false) : (passwordTextField.isSecureTextEntry = true)
+    }
+    
+    func setupView() {
+        passwordTextField.isSecureTextEntry = true
+    }
     func setupViewModel(){
 //        loginViewModel.alertMessage.sink { message in
 //            self.showMessage(message: message)
