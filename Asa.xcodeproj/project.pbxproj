@@ -21,6 +21,17 @@
 		9874638F279C3DB500AC3287 /* StatementLetterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */; };
 		98746392279C3DD300AC3287 /* StatementLetterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */; };
 		98746393279C3DD300AC3287 /* StatementLetterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */; };
+		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
+		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
+		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
+		98C2FCEA279F90C000A1E040 /* TransplantationList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE9279F90C000A1E040 /* TransplantationList.storyboard */; };
+		98C2FCED279FB95000A1E040 /* NewRegistrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCEB279FB95000A1E040 /* NewRegistrationTableViewCell.swift */; };
+		98C2FCEE279FB95000A1E040 /* NewRegistrationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCEC279FB95000A1E040 /* NewRegistrationTableViewCell.xib */; };
+		98C2FCF1279FB96700A1E040 /* CallHelpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCEF279FB96700A1E040 /* CallHelpTableViewCell.swift */; };
+		98C2FCF2279FB96700A1E040 /* CallHelpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCF0279FB96700A1E040 /* CallHelpTableViewCell.xib */; };
+		98C2FCF5279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCF3279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift */; };
+		98C2FCF6279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCF4279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib */; };
+		98C2FCF8279FE89E00A1E040 /* Extension+TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCF7279FE89E00A1E040 /* Extension+TableViewCell.swift */; };
 		98CED47B279C412B00BD548C /* ScheduleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9874637F279BFDC000AC3287 /* ScheduleListTableViewCell.xib */; };
 		98CED47C279C413300BD548C /* ScheduleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */; };
 		9C410F835E47BE30AD243439 /* Pods_Asa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD698C5E2B09584B66E62DE /* Pods_Asa.framework */; };
@@ -89,6 +100,7 @@
 		2B46FDCA18E646FC346AEC64 /* Pods-Asa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa.debug.xcconfig"; path = "Target Support Files/Pods-Asa/Pods-Asa.debug.xcconfig"; sourceTree = "<group>"; };
 		4D18EE9DD51FE52660EA004B /* Pods-AsaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsaTests.debug.xcconfig"; path = "Target Support Files/Pods-AsaTests/Pods-AsaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F68D206E6AA0BB76D11BD10 /* Pods-Asa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa.release.xcconfig"; path = "Target Support Files/Pods-Asa/Pods-Asa.release.xcconfig"; sourceTree = "<group>"; };
+		53D42D08A99BB2210C932B71 /* Pods-Asa.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa.local.xcconfig"; path = "Target Support Files/Pods-Asa/Pods-Asa.local.xcconfig"; sourceTree = "<group>"; };
 		8DD698C5E2B09584B66E62DE /* Pods_Asa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98746362279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailTableViewCell.swift; sourceTree = "<group>"; };
 		98746363279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -105,6 +117,17 @@
 		9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListViewModel.swift; sourceTree = "<group>"; };
 		98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListTableViewCell.swift; sourceTree = "<group>"; };
 		98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementLetterListTableViewCell.xib; sourceTree = "<group>"; };
+		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
+		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
+		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
+		98C2FCE9279F90C000A1E040 /* TransplantationList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransplantationList.storyboard; sourceTree = "<group>"; };
+		98C2FCEB279FB95000A1E040 /* NewRegistrationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegistrationTableViewCell.swift; sourceTree = "<group>"; };
+		98C2FCEC279FB95000A1E040 /* NewRegistrationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewRegistrationTableViewCell.xib; sourceTree = "<group>"; };
+		98C2FCEF279FB96700A1E040 /* CallHelpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHelpTableViewCell.swift; sourceTree = "<group>"; };
+		98C2FCF0279FB96700A1E040 /* CallHelpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallHelpTableViewCell.xib; sourceTree = "<group>"; };
+		98C2FCF3279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsTableViewCell.swift; sourceTree = "<group>"; };
+		98C2FCF4279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsTableViewCell.xib; sourceTree = "<group>"; };
+		98C2FCF7279FE89E00A1E040 /* Extension+TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableViewCell.swift"; sourceTree = "<group>"; };
 		98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListTableViewCell.swift; sourceTree = "<group>"; };
 		9ABD5D21E357EF100398DB42 /* Pods_AsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77C4F7DE9390605366ED55A /* Pods-Asa-AsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa-AsaUITests.release.xcconfig"; path = "Target Support Files/Pods-Asa-AsaUITests/Pods-Asa-AsaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +220,7 @@
 				A77C4F7DE9390605366ED55A /* Pods-Asa-AsaUITests.release.xcconfig */,
 				4D18EE9DD51FE52660EA004B /* Pods-AsaTests.debug.xcconfig */,
 				1152E13896BFE510E9201EBD /* Pods-AsaTests.release.xcconfig */,
+				53D42D08A99BB2210C932B71 /* Pods-Asa.local.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -222,6 +246,8 @@
 		9874636D279BF2EC00AC3287 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */,
+				98C2FCE9279F90C000A1E040 /* TransplantationList.storyboard */,
 				98746373279BF37500AC3287 /* TableCell */,
 			);
 			path = View;
@@ -240,6 +266,14 @@
 			children = (
 				98746374279BF39A00AC3287 /* TransplantationListTableViewCell.swift */,
 				98746375279BF39A00AC3287 /* TransplantationListTableViewCell.xib */,
+				98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */,
+				98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */,
+				98C2FCEB279FB95000A1E040 /* NewRegistrationTableViewCell.swift */,
+				98C2FCEC279FB95000A1E040 /* NewRegistrationTableViewCell.xib */,
+				98C2FCEF279FB96700A1E040 /* CallHelpTableViewCell.swift */,
+				98C2FCF0279FB96700A1E040 /* CallHelpTableViewCell.xib */,
+				98C2FCF3279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift */,
+				98C2FCF4279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -341,9 +375,9 @@
 		98AD1598279BAE10002FF074 /* Transplantation */ = {
 			isa = PBXGroup;
 			children = (
+				98AD1599279BAE1B002FF074 /* TransplantationList */,
 				98746387279C3D5C00AC3287 /* StatementLetterList */,
 				98AD159A279BAE24002FF074 /* TransplantationDetail */,
-				98AD1599279BAE1B002FF074 /* TransplantationList */,
 			);
 			path = Transplantation;
 			sourceTree = "<group>";
@@ -595,6 +629,7 @@
 				BCF1F74F278FFD7B00CFD5C4 /* Extension+Cell.swift */,
 				BCF1F74E278FFD7900CFD5C4 /* Extension+UIView.swift */,
 				BCF1F74D278FFD7600CFD5C4 /* Extension+Date.swift */,
+				98C2FCF7279FE89E00A1E040 /* Extension+TableViewCell.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -808,10 +843,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC718C0A278DAD4700D7DDC6 /* LaunchScreen.storyboard in Resources */,
+				98C2FCF6279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib in Resources */,
 				98746393279C3DD300AC3287 /* StatementLetterListTableViewCell.xib in Resources */,
+				98C2FCF2279FB96700A1E040 /* CallHelpTableViewCell.xib in Resources */,
+				98C2FCEE279FB95000A1E040 /* NewRegistrationTableViewCell.xib in Resources */,
 				BC1868EF2799385900033B79 /* Registration.storyboard in Resources */,
 				BCF1F7A6279009D200CFD5C4 /* BaseResponse.json in Resources */,
 				98746365279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib in Resources */,
+				98C2FCEA279F90C000A1E040 /* TransplantationList.storyboard in Resources */,
 				BCF1F7A7279009D200CFD5C4 /* LoginResponse.json in Resources */,
 				BC718C34278DAEB700D7DDC6 /* Colors.xcassets in Resources */,
 				BCF1F749278FFBE200CFD5C4 /* Login.storyboard in Resources */,
@@ -820,6 +859,7 @@
 				BCF1F73E278FFB9900CFD5C4 /* .gitkeep in Resources */,
 				BC718C07278DAD4700D7DDC6 /* Assets.xcassets in Resources */,
 				98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */,
+				98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,11 +921,14 @@
 				BCF1F7912790071200CFD5C4 /* RegistrationResponse.swift in Sources */,
 				98746369279BF22A00AC3287 /* TransplantationDetailCoordinator.swift in Sources */,
 				BCF1F7A8279009D200CFD5C4 /* BaseResponseJson.swift in Sources */,
+				98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */,
 				BCF1F770278FFE3700CFD5C4 /* UIImage+Extension.swift in Sources */,
 				BCF1F761278FFDDB00CFD5C4 /* Extension+UIButton.swift in Sources */,
 				BCF1F762278FFDDB00CFD5C4 /* Extension+Cell.swift in Sources */,
+				98C2FCF8279FE89E00A1E040 /* Extension+TableViewCell.swift in Sources */,
 				BCF1F745278FFBD100CFD5C4 /* LoginCoordinator.swift in Sources */,
 				BCF1F7A02790090D00CFD5C4 /* LocalAuthRepository.swift in Sources */,
+				98C2FCF5279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift in Sources */,
 				BCF1F759278FFDDB00CFD5C4 /* Extension+UITextfield.swift in Sources */,
 				BC1868F12799388200033B79 /* RegistrationViewModel.swift in Sources */,
 				BCF1F735278FF6EC00CFD5C4 /* Container+Extension.swift in Sources */,
@@ -902,6 +945,7 @@
 				9874638D279C3DA400AC3287 /* StatementLetterListCoordinator.swift in Sources */,
 				BCF1F72E278FF64400CFD5C4 /* AppCoordinator+Flow.swift in Sources */,
 				98746364279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift in Sources */,
+				98C2FCF1279FB96700A1E040 /* CallHelpTableViewCell.swift in Sources */,
 				BCF1F78D2790071200CFD5C4 /* LoginRequest.swift in Sources */,
 				BCF1F764278FFDDB00CFD5C4 /* Extension+UIView.swift in Sources */,
 				BCF1F75C278FFDDB00CFD5C4 /* Extension+Date.swift in Sources */,
@@ -910,6 +954,7 @@
 				BCF1F73A278FF7AE00CFD5C4 /* K+Enum.swift in Sources */,
 				98746385279C004500AC3287 /* ScheduleListViewModel.swift in Sources */,
 				BCF1F73C278FFB2C00CFD5C4 /* SceneDelegate+Setup.swift in Sources */,
+				98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */,
 				9874636B279BF24C00AC3287 /* TransplantationDetailViewModel.swift in Sources */,
 				BCF1F76E278FFE3700CFD5C4 /* UIColor+Extension.swift in Sources */,
 				BCF1F78F2790071200CFD5C4 /* AuthServices.swift in Sources */,
@@ -927,6 +972,7 @@
 				BCF1F75E278FFDDB00CFD5C4 /* NetworkState.swift in Sources */,
 				98746376279BF39A00AC3287 /* TransplantationListTableViewCell.swift in Sources */,
 				BCF1F72A278FF5C700CFD5C4 /* AppConfiguration.swift in Sources */,
+				98C2FCED279FB95000A1E040 /* NewRegistrationTableViewCell.swift in Sources */,
 				BCF1F79E2790090A00CFD5C4 /* Asa.xcdatamodeld in Sources */,
 				BCF1F7A42790099300CFD5C4 /* UserEntity+CoreDataProperties copy.swift in Sources */,
 				BC718C00278DAD4600D7DDC6 /* SceneDelegate.swift in Sources */,
@@ -1024,7 +1070,7 @@
 		};
 		BC1868F62799419500033B79 /* Local */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B46FDCA18E646FC346AEC64 /* Pods-Asa.debug.xcconfig */;
+			baseConfigurationReference = 53D42D08A99BB2210C932B71 /* Pods-Asa.local.xcconfig */;
 			buildSettings = {
 				API_KEY = "https://local.naspda.com";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

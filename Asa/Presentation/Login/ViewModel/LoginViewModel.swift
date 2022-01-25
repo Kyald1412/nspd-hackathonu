@@ -51,7 +51,7 @@ final class LoginViewModel {
     }
     
     func goToRegistration() {
-        self.coordinator?.goToRegistration(title: "TSADNASDKASJKK")
+        self.coordinator?.goToRegistration(title: "Registrasi")
     }
     
 }

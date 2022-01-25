@@ -61,6 +61,7 @@ open class LoginCoordinator: BaseCoordinator, CoordinatorFinishOutput {
     }
 }
 
+
 protocol LoginInteface: AnyObject {
     func onBack()
     func goToRegistration(title: String)

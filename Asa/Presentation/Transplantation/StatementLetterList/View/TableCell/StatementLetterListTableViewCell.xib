@@ -99,6 +99,11 @@
             <point key="canvasLocation" x="165.21739130434784" y="212.61160714285714"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="Zpq-fa-hQk">
+            <size key="intrinsicContentSize" width="162.5" height="28.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="checkmark.bubble.fill" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">

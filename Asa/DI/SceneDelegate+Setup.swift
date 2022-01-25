@@ -32,6 +32,10 @@ extension SceneDelegate {
         container.register(RegistrationViewModel.self) { r in
             RegistrationViewModel(authUseCase: r.resolve(AuthUseCase.self))
         }
+        //ini trasnplantation list ga pake authcase karena emg gabutuh keknya
+        container.register(TransplantationListViewModel.self) { r in
+            TransplantationListViewModel()
+        }
     }
     
     // MARK: - View Controllers
@@ -41,6 +45,9 @@ extension SceneDelegate {
         }
         container.storyboardInitCompleted(RegistrationScene.self) { resolver, controller in
             controller.registrationViewModel = resolver.resolve(RegistrationViewModel.self)
+        }
+        container.storyboardInitCompleted(TransplantationListScene.self) { resolver, controller in
+            controller.transplantationListViewModel = resolver.resolve(TransplantationListViewModel.self)
         }
     }
     
