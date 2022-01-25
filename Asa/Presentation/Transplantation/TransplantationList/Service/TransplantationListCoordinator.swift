@@ -42,11 +42,11 @@ open class TransplantationListCoordinator: BaseCoordinator, CoordinatorFinishOut
         let viewController = container.resolveViewController(TransplantationListScene.self)
         viewController.transplantationListViewModel.coordinator = self
         
-        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
-        navigationController.navigationItem.backBarButtonItem = item
-        navigationController.isNavigationBarHidden = false
-        navigationController.navigationBar.isHidden = false
-        navigationController.navigationBar.backItem?.backBarButtonItem = item
+//        let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+//        navigationController.navigationItem.backBarButtonItem = item
+        navigationController.isNavigationBarHidden = true
+        navigationController.navigationBar.isHidden = true
+//        navigationController.navigationBar.backItem?.backBarButtonItem = item
         navigationController.pushViewController(viewController, animated: true)
     }
 }

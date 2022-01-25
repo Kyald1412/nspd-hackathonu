@@ -31,6 +31,7 @@
 		98C2FCF2279FB96700A1E040 /* CallHelpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCF0279FB96700A1E040 /* CallHelpTableViewCell.xib */; };
 		98C2FCF5279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCF3279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift */; };
 		98C2FCF6279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCF4279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib */; };
+		98C2FCF8279FE89E00A1E040 /* Extension+TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCF7279FE89E00A1E040 /* Extension+TableViewCell.swift */; };
 		98CED47B279C412B00BD548C /* ScheduleListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9874637F279BFDC000AC3287 /* ScheduleListTableViewCell.xib */; };
 		98CED47C279C413300BD548C /* ScheduleListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */; };
 		9C410F835E47BE30AD243439 /* Pods_Asa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD698C5E2B09584B66E62DE /* Pods_Asa.framework */; };
@@ -126,6 +127,7 @@
 		98C2FCF0279FB96700A1E040 /* CallHelpTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallHelpTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCF3279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCF4279FB98700A1E040 /* TermsAndConditionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsTableViewCell.xib; sourceTree = "<group>"; };
+		98C2FCF7279FE89E00A1E040 /* Extension+TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableViewCell.swift"; sourceTree = "<group>"; };
 		98CED479279C40C900BD548C /* ScheduleListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleListTableViewCell.swift; sourceTree = "<group>"; };
 		9ABD5D21E357EF100398DB42 /* Pods_AsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77C4F7DE9390605366ED55A /* Pods-Asa-AsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa-AsaUITests.release.xcconfig"; path = "Target Support Files/Pods-Asa-AsaUITests/Pods-Asa-AsaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -627,6 +629,7 @@
 				BCF1F74F278FFD7B00CFD5C4 /* Extension+Cell.swift */,
 				BCF1F74E278FFD7900CFD5C4 /* Extension+UIView.swift */,
 				BCF1F74D278FFD7600CFD5C4 /* Extension+Date.swift */,
+				98C2FCF7279FE89E00A1E040 /* Extension+TableViewCell.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -922,6 +925,7 @@
 				BCF1F770278FFE3700CFD5C4 /* UIImage+Extension.swift in Sources */,
 				BCF1F761278FFDDB00CFD5C4 /* Extension+UIButton.swift in Sources */,
 				BCF1F762278FFDDB00CFD5C4 /* Extension+Cell.swift in Sources */,
+				98C2FCF8279FE89E00A1E040 /* Extension+TableViewCell.swift in Sources */,
 				BCF1F745278FFBD100CFD5C4 /* LoginCoordinator.swift in Sources */,
 				BCF1F7A02790090D00CFD5C4 /* LocalAuthRepository.swift in Sources */,
 				98C2FCF5279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift in Sources */,

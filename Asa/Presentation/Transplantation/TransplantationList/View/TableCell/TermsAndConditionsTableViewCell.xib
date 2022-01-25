@@ -22,15 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCM-yn-ZMs">
-                                <rect key="frame" x="0.0" y="0.0" width="173" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="149" height="44"/>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system" imagePlacement="trailing" title="Syarat &amp; Ketentuan">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="12"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="uCM-yn-ZMs" firstAttribute="top" secondItem="1Fj-mM-xB2" secondAttribute="top" id="0R7-PH-jHn"/>
                             <constraint firstAttribute="bottom" secondItem="uCM-yn-ZMs" secondAttribute="bottom" id="58o-oa-KOR"/>

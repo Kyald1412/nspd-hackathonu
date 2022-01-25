@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76p-Fk-fL0">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76p-Fk-fL0" customClass="DesignableView" customModule="Asa" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusAsa" translatesAutoresizingMaskIntoConstraints="NO" id="ZUh-fh-nij">
@@ -40,8 +40,14 @@
                             <constraint firstItem="ZUh-fh-nij" firstAttribute="leading" secondItem="76p-Fk-fL0" secondAttribute="leading" constant="16" id="swz-W4-Sym"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ynR-NP-kBn" secondAttribute="trailing" constant="40" id="w1h-VM-OUi"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstItem="76p-Fk-fL0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1g2-fc-vFd"/>
                     <constraint firstAttribute="trailing" secondItem="76p-Fk-fL0" secondAttribute="trailing" id="PPg-Qf-NvI"/>

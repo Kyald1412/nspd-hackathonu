@@ -32,4 +32,14 @@ extension AppCoordinator {
         coordinator.start()
     }
     
+    func runTransplantationListFlow() {
+        let coordinator = TransplantationListCoordinator(container: container, navigationController: navigationController)
+        coordinator.finishFlow = { [unowned self, unowned coordinator] in
+            self.removeDependency(coordinator)
+            self.start()
+        }
+        addDependency(coordinator)
+        coordinator.start()
+    }
+    
 }

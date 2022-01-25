@@ -35,7 +35,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vLv-lI-7Zj" secondAttribute="trailing" constant="24" id="3ga-On-D8M"/>
                             <constraint firstItem="vLv-lI-7Zj" firstAttribute="top" secondItem="QvO-mN-P2i" secondAttribute="bottom" constant="16" id="9fK-wa-RnX"/>
@@ -46,8 +46,14 @@
                             <constraint firstItem="vLv-lI-7Zj" firstAttribute="leading" secondItem="7bF-87-irL" secondAttribute="leading" constant="24" id="vh7-tp-gyh"/>
                             <constraint firstAttribute="bottom" secondItem="vLv-lI-7Zj" secondAttribute="bottom" constant="5" id="zLP-Hr-xYF"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstItem="7bF-87-irL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0f9-zu-mTl"/>
                     <constraint firstAttribute="bottom" secondItem="7bF-87-irL" secondAttribute="bottom" id="9Ty-aY-NpL"/>
@@ -63,9 +69,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

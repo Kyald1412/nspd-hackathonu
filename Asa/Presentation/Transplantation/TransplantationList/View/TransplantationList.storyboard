@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,13 +12,13 @@
         <!--Transplantation List Scene-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="TransplantationListScene" customModule="Asa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransplantationListScene" id="Y6W-OH-hqX" customClass="TransplantationListScene" customModule="Asa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMU-js-PVh">
-                                <rect key="frame" x="353.5" y="44" width="44.5" height="31"/>
+                                <rect key="frame" x="369.5" y="44" width="44.5" height="31"/>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system"/>
@@ -50,9 +50,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="82W-BR-s5g">
-                                <rect key="frame" x="0.0" y="155" width="414" height="658"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="82W-BR-s5g">
+                                <rect key="frame" x="16" y="155" width="382" height="658"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek4-cn-yH5">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
@@ -65,7 +66,7 @@
                             </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Ek4-cn-yH5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6hB-uM-4Zb"/>
                             <constraint firstItem="pXt-sY-YjB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7cc-xr-c5r"/>
@@ -73,13 +74,13 @@
                             <constraint firstItem="pXt-sY-YjB" firstAttribute="top" secondItem="KMU-js-PVh" secondAttribute="bottom" constant="6" id="CMz-Y3-cr4"/>
                             <constraint firstItem="Ek4-cn-yH5" firstAttribute="top" secondItem="82W-BR-s5g" secondAttribute="bottom" id="F4p-JI-NgA"/>
                             <constraint firstItem="82W-BR-s5g" firstAttribute="top" secondItem="pXt-sY-YjB" secondAttribute="bottom" constant="24" id="O5d-kR-1R9"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KMU-js-PVh" secondAttribute="trailing" constant="16" id="QcS-BW-gGi"/>
-                            <constraint firstItem="82W-BR-s5g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RgE-dC-xXT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KMU-js-PVh" secondAttribute="trailing" id="QcS-BW-gGi"/>
+                            <constraint firstItem="82W-BR-s5g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="RgE-dC-xXT"/>
                             <constraint firstItem="Ek4-cn-yH5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dT7-Th-acY"/>
                             <constraint firstItem="Ek4-cn-yH5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="iGS-wl-QbS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pXt-sY-YjB" secondAttribute="trailing" constant="16" id="txY-ri-jdW"/>
                             <constraint firstItem="KMU-js-PVh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="uLs-eC-sVi"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="82W-BR-s5g" secondAttribute="trailing" id="y5r-q7-qh4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="82W-BR-s5g" secondAttribute="trailing" constant="16" id="y5r-q7-qh4"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,9 +100,6 @@
         <image name="foto_profile" width="36" height="36"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

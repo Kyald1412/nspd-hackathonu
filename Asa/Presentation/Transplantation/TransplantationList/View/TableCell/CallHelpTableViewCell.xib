@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oS-dQ-mGa">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oS-dQ-mGa" customClass="DesignableView" customModule="Asa" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-0j-G9e">
@@ -35,8 +35,14 @@
                             <constraint firstItem="P3J-0j-G9e" firstAttribute="height" secondItem="5oS-dQ-mGa" secondAttribute="height" multiplier="0.727273" id="sgE-Oe-NZb"/>
                             <constraint firstItem="P3J-0j-G9e" firstAttribute="width" secondItem="5oS-dQ-mGa" secondAttribute="width" multiplier="0.528125" id="vO3-Iv-wTf"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="5oS-dQ-mGa" secondAttribute="bottom" id="1DZ-C5-39b"/>
                     <constraint firstItem="5oS-dQ-mGa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kxf-8J-JIa"/>
