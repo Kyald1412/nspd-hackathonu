@@ -21,6 +21,8 @@
 		9874638F279C3DB500AC3287 /* StatementLetterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */; };
 		98746392279C3DD300AC3287 /* StatementLetterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */; };
 		98746393279C3DD300AC3287 /* StatementLetterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */; };
+		988E750C27A2EF3500681437 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E750B27A2EF3500681437 /* Home.storyboard */; };
+		988E750E27A2EFA200681437 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E750D27A2EFA200681437 /* HomeScene.swift */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -117,6 +119,8 @@
 		9874638E279C3DB500AC3287 /* StatementLetterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListViewModel.swift; sourceTree = "<group>"; };
 		98746390279C3DD300AC3287 /* StatementLetterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementLetterListTableViewCell.swift; sourceTree = "<group>"; };
 		98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementLetterListTableViewCell.xib; sourceTree = "<group>"; };
+		988E750B27A2EF3500681437 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		988E750D27A2EFA200681437 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -372,6 +376,39 @@
 			path = TableCell;
 			sourceTree = "<group>";
 		};
+		988E750727A2EEFA00681437 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				988E750A27A2EF1900681437 /* View */,
+				988E750927A2EF1000681437 /* ViewModel */,
+				988E750827A2EF0800681437 /* Service */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		988E750827A2EF0800681437 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		988E750927A2EF1000681437 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		988E750A27A2EF1900681437 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				988E750B27A2EF3500681437 /* Home.storyboard */,
+				988E750D27A2EFA200681437 /* HomeScene.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		98AD1598279BAE10002FF074 /* Transplantation */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,6 +591,7 @@
 		BC718C32278DAE7E00D7DDC6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				988E750727A2EEFA00681437 /* Home */,
 				98746378279BFC9400AC3287 /* Schedule */,
 				98AD1598279BAE10002FF074 /* Transplantation */,
 				BCF1F74C278FFBEE00CFD5C4 /* Registration */,
@@ -857,6 +895,7 @@
 				98CED47B279C412B00BD548C /* ScheduleListTableViewCell.xib in Resources */,
 				BCF1F773278FFE5A00CFD5C4 /* Localizable.strings in Resources */,
 				BCF1F73E278FFB9900CFD5C4 /* .gitkeep in Resources */,
+				988E750C27A2EF3500681437 /* Home.storyboard in Resources */,
 				BC718C07278DAD4700D7DDC6 /* Assets.xcassets in Resources */,
 				98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */,
 				98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */,
@@ -933,6 +972,7 @@
 				BC1868F12799388200033B79 /* RegistrationViewModel.swift in Sources */,
 				BCF1F735278FF6EC00CFD5C4 /* Container+Extension.swift in Sources */,
 				BCF1F74B278FFBEA00CFD5C4 /* LoginViewModel.swift in Sources */,
+				988E750E27A2EFA200681437 /* HomeScene.swift in Sources */,
 				BCF1F747278FFBDA00CFD5C4 /* LoginScene.swift in Sources */,
 				BC1868F3279938A100033B79 /* RegistrationCoordinator.swift in Sources */,
 				98746370279BF34B00AC3287 /* TransplantationListCoordinator.swift in Sources */,
