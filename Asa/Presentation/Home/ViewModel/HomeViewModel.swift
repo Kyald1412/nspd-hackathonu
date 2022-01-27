@@ -13,7 +13,6 @@ import SwiftyUserDefaults
 final class HomeViewModel {
     
     public weak var coordinator: HomeInterface?
-//    private var authUseCase: AuthUseCase?
     private var isRechable = CurrentValueSubject<Bool, Never>(false)
     
     var isLoading = CurrentValueSubject<Bool, Never>(false)
@@ -32,4 +31,30 @@ final class HomeViewModel {
 //    }
     
 }
+
+
+//final class LoginViewModel {
+//
+//    public weak var coordinator: LoginInteface?
+//    private var authUseCase: AuthUseCase?
+//    private var isRechable = CurrentValueSubject<Bool, Never>(false)
+//
+//    var isLoading = CurrentValueSubject<Bool, Never>(false)
+//    var alertMessage: PassthroughSubject<String, Never> = PassthroughSubject()
+//
+//    init(coordinator: LoginInteface? = nil, authUseCase: AuthUseCase?) {
+//        self.coordinator = coordinator
+//        self.authUseCase = authUseCase
+//
+//        if NetworkState().isInternetAvailable {
+//            isRechable.send(true)
+//        }
+//    }
+//
+//
+//    func goToRegistration() {
+//        self.coordinator?.goToRegistration(title: "Registrasi")
+//    }
+//
+//}
 
