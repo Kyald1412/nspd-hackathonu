@@ -28,7 +28,7 @@ class HomeScene: UITabBarController, SceneStoryboardLoadable, UITabBarController
 
 
         // Create Tab two
-        let tabTwo = self.homeViewModel.coordinator?.trasncplationScene()
+        let tabTwo = self.homeViewModel.coordinator?.transplantationScene()
         let tabTwoBarItem2 = UITabBarItem(title: "Tab 2", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
 
         tabTwo?.tabBarItem = tabTwoBarItem2
@@ -37,10 +37,10 @@ class HomeScene: UITabBarController, SceneStoryboardLoadable, UITabBarController
     }
 }
 
-
-
+//
+//
 //class LoginScene: UITabBarController, SceneStoryboardLoadable, UITabBarControllerDelegate {
-
+//
 //    var loginViewModel: LoginViewModel!
 //    private var cancellables = Set<AnyCancellable>()
 //    private var loadingView: LoadingView!
@@ -51,7 +51,7 @@ class HomeScene: UITabBarController, SceneStoryboardLoadable, UITabBarController
 //
 //        self.title = L10n.login
 //    }
-
+//
 //    override func viewWillAppear(_ animated: Bool) {
 //        super.viewWillAppear(animated)
 //
@@ -70,8 +70,8 @@ class HomeScene: UITabBarController, SceneStoryboardLoadable, UITabBarController
 //
 //        self.viewControllers = [tabOne!, tabTwo!]
 //    }
-
-    // UITabBarControllerDelegate method
+//
+////     UITabBarControllerDelegate method
 //    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
 ////        print("Selected \(viewController.title!)")
 //    }

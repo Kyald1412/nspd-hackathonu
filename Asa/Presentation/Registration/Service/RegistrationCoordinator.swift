@@ -68,6 +68,11 @@ open class RegistrationCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 //        addDependency(coordinator)
 //        coordinator.start()
     }
+    
+    func getRegistration() -> RegistrationScene {
+        let viewController = container.resolveViewController(RegistrationScene.self)
+        return viewController
+    }
 }
 
 protocol RegistrationInterface: AnyObject {

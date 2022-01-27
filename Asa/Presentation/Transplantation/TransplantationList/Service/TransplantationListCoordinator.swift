@@ -31,13 +31,15 @@ open class TransplantationListCoordinator: BaseCoordinator, CoordinatorFinishOut
         self.container = container
         self.navigationController = navigationController
     }
-
-//    // MARK: - Private methods
-//    func getLogin() -> LoginScene{
-//        let viewController = container.resolveViewController(LoginScene.self)
-//        return viewController
-//    }
     
+    
+//    // MARK: - Private methods
+    
+    func getTransplant() -> TransplantationListScene{
+        let viewController = container.resolveViewController(TransplantationListScene.self)
+        return viewController
+    }
+
     private func showTransplantationList() {
         let viewController = container.resolveViewController(TransplantationListScene.self)
         viewController.transplantationListViewModel.coordinator = self

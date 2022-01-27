@@ -26,35 +26,9 @@ final class HomeViewModel {
         }
     }
     
-//    func goToRegistration() {
-//        self.coordinator?.goToRegistration(title: "Registrasi")
-//    }
+    func goToRegistration() {
+        self.coordinator?.goToRegistration(title: "Registrasi")
+    }
     
 }
-
-
-//final class LoginViewModel {
-//
-//    public weak var coordinator: LoginInteface?
-//    private var authUseCase: AuthUseCase?
-//    private var isRechable = CurrentValueSubject<Bool, Never>(false)
-//
-//    var isLoading = CurrentValueSubject<Bool, Never>(false)
-//    var alertMessage: PassthroughSubject<String, Never> = PassthroughSubject()
-//
-//    init(coordinator: LoginInteface? = nil, authUseCase: AuthUseCase?) {
-//        self.coordinator = coordinator
-//        self.authUseCase = authUseCase
-//
-//        if NetworkState().isInternetAvailable {
-//            isRechable.send(true)
-//        }
-//    }
-//
-//
-//    func goToRegistration() {
-//        self.coordinator?.goToRegistration(title: "Registrasi")
-//    }
-//
-//}
 
