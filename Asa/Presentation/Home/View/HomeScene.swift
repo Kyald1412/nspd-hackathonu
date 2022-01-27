@@ -6,24 +6,58 @@
 //
 
 import UIKit
+import Combine
 
-class HomeScene: UITabBarController {
-
+class HomeScene: UITabBarController, SceneStoryboardLoadable, UITabBarControllerDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        <#code#>
     }
-    */
-
 }
+
+
+//
+//class LoginScene: UITabBarController, SceneStoryboardLoadable, UITabBarControllerDelegate {
+//
+//    var loginViewModel: LoginViewModel!
+//    private var cancellables = Set<AnyCancellable>()
+//    private var loadingView: LoadingView!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        self.delegate = self
+//
+//        self.title = L10n.login
+//    }
+//
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        // Create Tab one
+//        let tabOne = self.loginViewModel.coordinator?.registrationScene()
+//        let tabOneBarItem = UITabBarItem(title: "Tab 1", image: UIImage(named: "defaultImage.png"), selectedImage: UIImage(named: "selectedImage.png"))
+//
+//        tabOne?.tabBarItem = tabOneBarItem
+//
+//
+//        // Create Tab two
+//        let tabTwo = self.loginViewModel.coordinator?.trasncplationScene()
+//        let tabTwoBarItem2 = UITabBarItem(title: "Tab 2", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
+//
+//        tabTwo?.tabBarItem = tabTwoBarItem2
+//
+//        self.viewControllers = [tabOne!, tabTwo!]
+//    }
+//
+//    // UITabBarControllerDelegate method
+//    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+////        print("Selected \(viewController.title!)")
+//    }
+//
+//}

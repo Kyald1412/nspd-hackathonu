@@ -23,6 +23,8 @@
 		98746393279C3DD300AC3287 /* StatementLetterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */; };
 		988E750C27A2EF3500681437 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E750B27A2EF3500681437 /* Home.storyboard */; };
 		988E750E27A2EFA200681437 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E750D27A2EFA200681437 /* HomeScene.swift */; };
+		988E751027A2F1A200681437 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E750F27A2F1A200681437 /* HomeViewModel.swift */; };
+		988E751227A2F1B400681437 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751127A2F1B400681437 /* HomeCoordinator.swift */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -121,6 +123,8 @@
 		98746391279C3DD300AC3287 /* StatementLetterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementLetterListTableViewCell.xib; sourceTree = "<group>"; };
 		988E750B27A2EF3500681437 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		988E750D27A2EFA200681437 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
+		988E750F27A2F1A200681437 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		988E751127A2F1B400681437 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -389,6 +393,7 @@
 		988E750827A2EF0800681437 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				988E751127A2F1B400681437 /* HomeCoordinator.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 		988E750927A2EF1000681437 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				988E750F27A2F1A200681437 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -979,6 +985,7 @@
 				BCF1F771278FFE3700CFD5C4 /* Assets+Extension.swift in Sources */,
 				98746372279BF37000AC3287 /* TransplantationListViewModel.swift in Sources */,
 				9874638F279C3DB500AC3287 /* StatementLetterListViewModel.swift in Sources */,
+				988E751027A2F1A200681437 /* HomeViewModel.swift in Sources */,
 				BCF1F75F278FFDDB00CFD5C4 /* Extension+Int.swift in Sources */,
 				BCF1F72C278FF63F00CFD5C4 /* StoryboardLoadable.swift in Sources */,
 				BCF1F7962790073300CFD5C4 /* AuthRepository.swift in Sources */,
@@ -997,6 +1004,7 @@
 				98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */,
 				9874636B279BF24C00AC3287 /* TransplantationDetailViewModel.swift in Sources */,
 				BCF1F76E278FFE3700CFD5C4 /* UIColor+Extension.swift in Sources */,
+				988E751227A2F1B400681437 /* HomeCoordinator.swift in Sources */,
 				BCF1F78F2790071200CFD5C4 /* AuthServices.swift in Sources */,
 				98746383279C002E00AC3287 /* ScheduleListCoordinator.swift in Sources */,
 				BC718BFE278DAD4600D7DDC6 /* AppDelegate.swift in Sources */,
