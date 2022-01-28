@@ -27,6 +27,8 @@
 		988E751227A2F1B400681437 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751127A2F1B400681437 /* HomeCoordinator.swift */; };
 		988E751427A388E000681437 /* TransplantationDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E751327A388E000681437 /* TransplantationDetail.storyboard */; };
 		988E751627A3891200681437 /* TransplantationDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751527A3891200681437 /* TransplantationDetailScene.swift */; };
+		988E751927A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */; };
+		988E751A27A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -129,6 +131,8 @@
 		988E751127A2F1B400681437 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		988E751327A388E000681437 /* TransplantationDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransplantationDetail.storyboard; sourceTree = "<group>"; };
 		988E751527A3891200681437 /* TransplantationDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailScene.swift; sourceTree = "<group>"; };
+		988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailDisabeldTableViewCell.swift; sourceTree = "<group>"; };
+		988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailDisabeldTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -480,6 +484,8 @@
 			children = (
 				98746362279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift */,
 				98746363279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib */,
+				988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */,
+				988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -910,6 +916,7 @@
 				988E750C27A2EF3500681437 /* Home.storyboard in Resources */,
 				988E751427A388E000681437 /* TransplantationDetail.storyboard in Resources */,
 				BC718C07278DAD4700D7DDC6 /* Assets.xcassets in Resources */,
+				988E751A27A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib in Resources */,
 				98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */,
 				98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */,
 			);
@@ -983,6 +990,7 @@
 				98C2FCF5279FB98700A1E040 /* TermsAndConditionsTableViewCell.swift in Sources */,
 				BCF1F759278FFDDB00CFD5C4 /* Extension+UITextfield.swift in Sources */,
 				BC1868F12799388200033B79 /* RegistrationViewModel.swift in Sources */,
+				988E751927A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift in Sources */,
 				BCF1F735278FF6EC00CFD5C4 /* Container+Extension.swift in Sources */,
 				BCF1F74B278FFBEA00CFD5C4 /* LoginViewModel.swift in Sources */,
 				988E750E27A2EFA200681437 /* HomeScene.swift in Sources */,

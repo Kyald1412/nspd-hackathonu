@@ -1,20 +1,18 @@
 //
-//  TransplantationDetailTableViewCell.swift
+//  TransplantationDetailDisabeldTableViewCell.swift
 //  Asa
 //
-//  Created by Jehnsen Hirena Kane on 22/01/22.
+//  Created by Jehnsen Hirena Kane on 28/01/22.
 //
 
 import UIKit
 
-class TransplantationDetailTableViewCell: UITableViewCell {
+class TransplantationDetailDisabeldTableViewCell: UITableViewCell {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var mainIconImg: UIImageView!
-    @IBOutlet weak var statusImg: UIImageView!
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
-    @IBOutlet weak var thirdLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

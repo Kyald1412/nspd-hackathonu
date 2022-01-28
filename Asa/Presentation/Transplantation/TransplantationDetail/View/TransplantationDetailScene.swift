@@ -29,6 +29,7 @@ class TransplantationDetailScene: UIViewController, SceneStoryboardLoadable {
     
     private func registerXIB() {
         tableViewOutlet.register(UINib(nibName: TransplantationDetailTableViewCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: TransplantationDetailTableViewCell.cellIdentifier())
+        tableViewOutlet.register(UINib(nibName: TransplantationDetailDisabeldTableViewCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: TransplantationDetailDisabeldTableViewCell.cellIdentifier())
     }
 }
 
@@ -42,11 +43,9 @@ extension TransplantationDetailScene: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 4 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: TransplantationDetailTableViewCell.cellIdentifier()) as? TransplantationDetailTableViewCell else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TransplantationDetailDisabeldTableViewCell.cellIdentifier()) as? TransplantationDetailDisabeldTableViewCell else {
                 return UITableViewCell()
             }
-            cell.thirdLabel.isHidden = true
-            cell.statusImg.isHidden = true
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TransplantationDetailTableViewCell.cellIdentifier()) else {
