@@ -66,6 +66,16 @@ open class HomeCoordinator: BaseCoordinator, CoordinatorFinishOutput {
         return coordinator.getRegistration()
     }
     
+    func getDetailScene() -> TransplantationDetailScene {
+        let coordinator = TransplantationDetailCoordinator(container: container, navigationController: navigationController)
+        coordinator.finishFlow = { [unowned self, unowned coordinator] in
+            self.removeDependency(coordinator)
+            self.start()
+        }
+        addDependency(coordinator)
+        return coordinator.getTransplantationDetail()
+    }
+    
     private func showRegistartion(title: String) {
         let coordinator = RegistrationCoordinator(container: container, navigationController: navigationController)
         coordinator.finishFlow = { [unowned self, unowned coordinator] in
@@ -83,9 +93,14 @@ protocol HomeInterface: AnyObject {
     func goToRegistration(title: String)
     func registrationScene() -> RegistrationScene
     func transplantationScene() -> TransplantationListScene
+    func detailScene() -> TransplantationDetailScene
 }
 
 extension HomeCoordinator: HomeInterface {
+    func detailScene() -> TransplantationDetailScene {
+        return getDetailScene()
+    }
+    
     func registrationScene() -> RegistrationScene {
         return getRegistrationScene()
     }

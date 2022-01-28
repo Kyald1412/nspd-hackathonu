@@ -16,24 +16,25 @@ class HomeScene: UITabBarController, SceneStoryboardLoadable, UITabBarController
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        
     }
     
+    
+    
     override func viewWillAppear(_ animated: Bool) {
-        // Create Tab one
         let tabOne = self.homeViewModel.coordinator?.registrationScene()
-        let tabOneBarItem = UITabBarItem(title: "Tab 1", image: UIImage(named: "defaultImage.png"), selectedImage: UIImage(named: "selectedImage.png"))
-
+        let tabOneBarItem = UITabBarItem(title: "Tab 1", image: UIImage(systemName: "heart.fill"), selectedImage: UIImage(named: "selectedImage.png"))
         tabOne?.tabBarItem = tabOneBarItem
 
 
-        // Create Tab two
-        let tabTwo = self.homeViewModel.coordinator?.transplantationScene()
-        let tabTwoBarItem2 = UITabBarItem(title: "Tab 2", image: UIImage(named: "defaultImage2.png"), selectedImage: UIImage(named: "selectedImage2.png"))
 
+        let tabTwo = self.homeViewModel.coordinator?.transplantationScene()
+        let tabTwoBarItem2 = UITabBarItem(title: "Tab 2", image: UIImage(systemName: "heart.fill"), selectedImage: UIImage(named: "selectedImage2.png"))
         tabTwo?.tabBarItem = tabTwoBarItem2
 
-        self.viewControllers = [tabOne!, tabTwo!]
+        let tabThree = self.homeViewModel.coordinator?.detailScene()
+        let tabThreeBarItem = UITabBarItem(title: "Tab 3", image: UIImage(systemName: "heart.fill"), selectedImage: UIImage(named: "selectedImage.png"))
+        tabThree?.tabBarItem = tabThreeBarItem
+        self.viewControllers = [tabOne!, tabTwo!, tabThree!]
     }
 }
 

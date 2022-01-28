@@ -10,6 +10,7 @@ import UIKit
 class TransplantationDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var mainIconImg: UIImageView!
+    @IBOutlet weak var statusImg: UIImageView!
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var thirdLabel: UILabel!

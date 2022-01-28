@@ -36,9 +36,11 @@ extension SceneDelegate {
         container.register(TransplantationListViewModel.self) { r in
             TransplantationListViewModel()
         }
-        
         container.register(HomeViewModel.self) { r in
             HomeViewModel()
+        }
+        container.register(TransplantationDetailViewModel.self) { r in
+            TransplantationDetailViewModel()
         }
     }
     
@@ -56,6 +58,9 @@ extension SceneDelegate {
         container.storyboardInitCompleted(HomeScene.self) { resolver, controller in
             controller.homeViewModel = resolver.resolve(HomeViewModel.self)
             
+        }
+        container.storyboardInitCompleted(TransplantationDetailScene.self) { resolver, controller in
+            controller.transplantationDetailViewModel = resolver.resolve(TransplantationDetailViewModel.self)
         }
     }
     

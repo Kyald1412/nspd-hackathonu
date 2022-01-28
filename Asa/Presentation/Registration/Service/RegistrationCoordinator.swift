@@ -18,7 +18,6 @@ open class RegistrationCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 
     let navigationController: UINavigationController
     weak var delegate: RegistrationInterface?
-//    var registrasiTitle = ""
 
 
     // MARK: - Coordinator

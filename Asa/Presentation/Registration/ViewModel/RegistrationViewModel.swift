@@ -19,7 +19,7 @@ final class RegistrationViewModel {
     var isLoading = CurrentValueSubject<Bool, Never>(false)
     var alertMessage: PassthroughSubject<String, Never> = PassthroughSubject()
     
-    var registrasiTitle = ""
+    var registrasiTitle = "juancug"
     
     init(coordinator: RegistrationInterface? = nil, authUseCase: AuthUseCase?) {
         self.coordinator = coordinator

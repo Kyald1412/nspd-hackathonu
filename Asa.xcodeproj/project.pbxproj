@@ -25,6 +25,8 @@
 		988E750E27A2EFA200681437 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E750D27A2EFA200681437 /* HomeScene.swift */; };
 		988E751027A2F1A200681437 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E750F27A2F1A200681437 /* HomeViewModel.swift */; };
 		988E751227A2F1B400681437 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751127A2F1B400681437 /* HomeCoordinator.swift */; };
+		988E751427A388E000681437 /* TransplantationDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988E751327A388E000681437 /* TransplantationDetail.storyboard */; };
+		988E751627A3891200681437 /* TransplantationDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751527A3891200681437 /* TransplantationDetailScene.swift */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -125,6 +127,8 @@
 		988E750D27A2EFA200681437 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		988E750F27A2F1A200681437 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		988E751127A2F1B400681437 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		988E751327A388E000681437 /* TransplantationDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransplantationDetail.storyboard; sourceTree = "<group>"; };
+		988E751527A3891200681437 /* TransplantationDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailScene.swift; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -456,6 +460,8 @@
 		98AD159C279BAE50002FF074 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				988E751327A388E000681437 /* TransplantationDetail.storyboard */,
+				988E751527A3891200681437 /* TransplantationDetailScene.swift */,
 				98AD159E279BAE74002FF074 /* TableCell */,
 			);
 			path = View;
@@ -902,6 +908,7 @@
 				BCF1F773278FFE5A00CFD5C4 /* Localizable.strings in Resources */,
 				BCF1F73E278FFB9900CFD5C4 /* .gitkeep in Resources */,
 				988E750C27A2EF3500681437 /* Home.storyboard in Resources */,
+				988E751427A388E000681437 /* TransplantationDetail.storyboard in Resources */,
 				BC718C07278DAD4700D7DDC6 /* Assets.xcassets in Resources */,
 				98746377279BF39A00AC3287 /* TransplantationListTableViewCell.xib in Resources */,
 				98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */,
@@ -1009,6 +1016,7 @@
 				98746383279C002E00AC3287 /* ScheduleListCoordinator.swift in Sources */,
 				BC718BFE278DAD4600D7DDC6 /* AppDelegate.swift in Sources */,
 				BCF1F7902790071200CFD5C4 /* BaseResponse.swift in Sources */,
+				988E751627A3891200681437 /* TransplantationDetailScene.swift in Sources */,
 				BCF1F763278FFDDB00CFD5C4 /* CommonFunction.swift in Sources */,
 				BCF1F7A52790099300CFD5C4 /* UserEntity+CoreDataClass copy.swift in Sources */,
 				BCF1F7972790073300CFD5C4 /* AuthUseCase.swift in Sources */,

@@ -29,6 +29,5 @@ final class HomeViewModel {
     func goToRegistration() {
         self.coordinator?.goToRegistration(title: "Registrasi")
     }
-    
 }
 
