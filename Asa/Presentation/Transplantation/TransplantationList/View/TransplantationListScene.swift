@@ -42,8 +42,6 @@ class TransplantationListScene: UIViewController, SceneStoryboardLoadable {
         tableViewOutlet.register(UINib(nibName: CallHelpTableViewCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: CallHelpTableViewCell.cellIdentifier())
         tableViewOutlet.register(UINib(nibName: TermsAndConditionsTableViewCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: TermsAndConditionsTableViewCell.cellIdentifier())
     }
-
-    
 }
 
 extension TransplantationListScene: UITableViewDataSource {
@@ -57,7 +55,6 @@ extension TransplantationListScene: UITableViewDataSource {
     internal func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat(0)
     }
-//
 
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
@@ -67,9 +64,10 @@ extension TransplantationListScene: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: EmptyStateTableViewCell.cellIdentifier()) else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TransplantationListTableViewCell.cellIdentifier()) else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = .blue
             return cell
         } else if indexPath.section == 1 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: NewRegistrationTableViewCell.cellIdentifier()) else {
@@ -94,5 +92,6 @@ extension TransplantationListScene: UITableViewDataSource {
 
 extension TransplantationListScene: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hahaha")
     }
 }
