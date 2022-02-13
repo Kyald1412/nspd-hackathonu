@@ -47,7 +47,7 @@ extension SceneDelegate {
     // MARK: - View Controllers
     internal func setupViewController() {
         container.storyboardInitCompleted(LoginScene.self) { resolver, controller in
-            controller.loginViewModel = resolver.resolve(LoginViewModel.self)
+            controller.loginVM = resolver.resolve(LoginViewModel.self)
         }
         container.storyboardInitCompleted(RegistrationScene.self) { resolver, controller in
             controller.registrationViewModel = resolver.resolve(RegistrationViewModel.self)

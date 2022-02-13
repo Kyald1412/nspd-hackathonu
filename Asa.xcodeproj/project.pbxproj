@@ -29,6 +29,7 @@
 		988E751627A3891200681437 /* TransplantationDetailScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751527A3891200681437 /* TransplantationDetailScene.swift */; };
 		988E751927A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */; };
 		988E751A27A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */; };
+		98B9E7F127B8BDF40038136D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9E7F027B8BDF40038136D /* ErrorResponse.swift */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -133,6 +134,7 @@
 		988E751527A3891200681437 /* TransplantationDetailScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailScene.swift; sourceTree = "<group>"; };
 		988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailDisabeldTableViewCell.swift; sourceTree = "<group>"; };
 		988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailDisabeldTableViewCell.xib; sourceTree = "<group>"; };
+		98B9E7F027B8BDF40038136D /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 			children = (
 				BCF1F78A279006CD00CFD5C4 /* BaseResponse.swift */,
 				BCF1F78B279006DA00CFD5C4 /* RegistrationResponse.swift */,
+				98B9E7F027B8BDF40038136D /* ErrorResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -1042,6 +1045,7 @@
 				BC718C00278DAD4600D7DDC6 /* SceneDelegate.swift in Sources */,
 				BCF1F7A9279009D200CFD5C4 /* LoginResponseJson.swift in Sources */,
 				BCF1F730278FF64600CFD5C4 /* AppCoordinator.swift in Sources */,
+				98B9E7F127B8BDF40038136D /* ErrorResponse.swift in Sources */,
 				BC1868ED2799384E00033B79 /* RegistrationScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1141,7 +1145,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "https://api.diabestie.com";
+				BASE_URL = "http://110.234.2.235/api";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
@@ -1293,7 +1297,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "https://api.diabestie.com";
+				BASE_URL = "http://110.234.2.235/api";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
@@ -1327,7 +1331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "https://api.diabestie.com";
+				BASE_URL = "http://110.234.2.235/api";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;

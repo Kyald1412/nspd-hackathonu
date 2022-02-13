@@ -32,6 +32,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Masuk">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="masukPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MiY-wl-o87"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="Uoc-2J-Y0F">
                                 <rect key="frame" x="88" y="765.5" width="238.5" height="34.5"/>

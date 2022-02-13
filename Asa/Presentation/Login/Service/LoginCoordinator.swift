@@ -40,7 +40,7 @@ open class LoginCoordinator: BaseCoordinator, CoordinatorFinishOutput {
     
     private func showLogin() {        
         let viewController = container.resolveViewController(LoginScene.self)
-        viewController.loginViewModel.coordinator = self
+        viewController.loginVM.coordinator = self
         
         let item = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
         navigationController.navigationItem.backBarButtonItem = item

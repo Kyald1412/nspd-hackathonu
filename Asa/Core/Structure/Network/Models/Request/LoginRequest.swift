@@ -13,13 +13,13 @@ public class LoginRequest : NSObject{
     public var email : String!
     public var password : String!
     public var deviceId : String!
-    public var referral : String!
+//    public var referral : String!
 
-    public init(email: String, password: String, deviceId: String, referral: String) {
+    public init(email: String, password: String, deviceId: String) { //}, referral: String) {
         self.email = email
         self.password = password
         self.deviceId = deviceId
-        self.referral = referral
+//        self.referral = referral
     }
     
     func toDictionary() -> [String:Any]
@@ -34,9 +34,9 @@ public class LoginRequest : NSObject{
         if deviceId != nil{
             dictionary["device_id"] = deviceId
         }
-        if referral != nil{
-            dictionary["referral"] = referral
-        }
+//        if referral != nil{
+//            dictionary["referral"] = referral
+//        }
         return dictionary
     }
 }

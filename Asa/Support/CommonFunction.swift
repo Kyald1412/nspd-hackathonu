@@ -26,7 +26,7 @@ class CommonFunction: NSObject {
     }
     
     
-    func clearDataOnLogout(){        
+    func clearDataOnLogout(){
         Defaults[\.isLoggedIn] = false
         
         KeychainWrapper.shared.setAuthToken(token: "")
@@ -43,7 +43,7 @@ class CommonFunction: NSObject {
     
     func showFloatingAlert(message: String, style: BannerStyle, position: BannerPosition)  {
         let banner =  FloatingNotificationBanner(title: "",
-                                                 subtitle: message, 
+                                                 subtitle: message,
                                                  style: style)
         
         banner.dismissOnTap = true
@@ -72,5 +72,4 @@ class CommonFunction: NSObject {
         
         return attrString
     }
-    
 }

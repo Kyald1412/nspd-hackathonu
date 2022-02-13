@@ -36,6 +36,7 @@ public final class AppConfiguration {
         guard let apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "apiBaseURL") as? String else {
             fatalError("apiBaseURL must not be empty in plist")
         }
+        print("ini baase url yang kita punya \(apiBaseURL)")
         return apiBaseURL
     }()
 }
