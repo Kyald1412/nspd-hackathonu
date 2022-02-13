@@ -8,6 +8,8 @@
 
 import Foundation
 
-enum LoginResponseJson: String {
+enum AuthResponsesJSON: String {
     case LoginResponse
+    case RegisterResponse
+    case LogoutResponse
 }

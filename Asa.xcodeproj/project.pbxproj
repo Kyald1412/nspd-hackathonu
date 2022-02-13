@@ -30,6 +30,7 @@
 		988E751927A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */; };
 		988E751A27A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */; };
 		98B9E7F127B8BDF40038136D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9E7F027B8BDF40038136D /* ErrorResponse.swift */; };
+		98B9E7F327B8E5820038136D /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9E7F227B8E5820038136D /* RegisterRequest.swift */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -100,7 +101,7 @@
 		BCF1F7A6279009D200CFD5C4 /* BaseResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF1F7802790068600CFD5C4 /* BaseResponse.json */; };
 		BCF1F7A7279009D200CFD5C4 /* LoginResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF1F7822790068A00CFD5C4 /* LoginResponse.json */; };
 		BCF1F7A8279009D200CFD5C4 /* BaseResponseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1F7812790068600CFD5C4 /* BaseResponseJson.swift */; };
-		BCF1F7A9279009D200CFD5C4 /* LoginResponseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1F7832790068A00CFD5C4 /* LoginResponseJson.swift */; };
+		BCF1F7A9279009D200CFD5C4 /* AuthResponsesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1F7832790068A00CFD5C4 /* AuthResponsesJSON.swift */; };
 		BCF1F7AB27900BDD00CFD5C4 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1F7AA27900BDD00CFD5C4 /* DIService.swift */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,7 @@
 		988E751727A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailDisabeldTableViewCell.swift; sourceTree = "<group>"; };
 		988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailDisabeldTableViewCell.xib; sourceTree = "<group>"; };
 		98B9E7F027B8BDF40038136D /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		98B9E7F227B8E5820038136D /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -199,7 +201,7 @@
 		BCF1F7802790068600CFD5C4 /* BaseResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BaseResponse.json; sourceTree = "<group>"; };
 		BCF1F7812790068600CFD5C4 /* BaseResponseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseJson.swift; sourceTree = "<group>"; };
 		BCF1F7822790068A00CFD5C4 /* LoginResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginResponse.json; sourceTree = "<group>"; };
-		BCF1F7832790068A00CFD5C4 /* LoginResponseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseJson.swift; sourceTree = "<group>"; };
+		BCF1F7832790068A00CFD5C4 /* AuthResponsesJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponsesJSON.swift; sourceTree = "<group>"; };
 		BCF1F788279006BB00CFD5C4 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		BCF1F789279006C200CFD5C4 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		BCF1F78A279006CD00CFD5C4 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -718,7 +720,7 @@
 				BCF1F7802790068600CFD5C4 /* BaseResponse.json */,
 				BCF1F7812790068600CFD5C4 /* BaseResponseJson.swift */,
 				BCF1F7822790068A00CFD5C4 /* LoginResponse.json */,
-				BCF1F7832790068A00CFD5C4 /* LoginResponseJson.swift */,
+				BCF1F7832790068A00CFD5C4 /* AuthResponsesJSON.swift */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -773,6 +775,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF1F789279006C200CFD5C4 /* LoginRequest.swift */,
+				98B9E7F227B8E5820038136D /* RegisterRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -974,6 +977,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B9E7F327B8E5820038136D /* RegisterRequest.swift in Sources */,
 				BCF1F79F2790090D00CFD5C4 /* CoreDataStorage.swift in Sources */,
 				98746392279C3DD300AC3287 /* StatementLetterListTableViewCell.swift in Sources */,
 				BCF1F760278FFDDB00CFD5C4 /* Extension+UILabel.swift in Sources */,
@@ -1043,7 +1047,7 @@
 				BCF1F79E2790090A00CFD5C4 /* Asa.xcdatamodeld in Sources */,
 				BCF1F7A42790099300CFD5C4 /* UserEntity+CoreDataProperties copy.swift in Sources */,
 				BC718C00278DAD4600D7DDC6 /* SceneDelegate.swift in Sources */,
-				BCF1F7A9279009D200CFD5C4 /* LoginResponseJson.swift in Sources */,
+				BCF1F7A9279009D200CFD5C4 /* AuthResponsesJSON.swift in Sources */,
 				BCF1F730278FF64600CFD5C4 /* AppCoordinator.swift in Sources */,
 				98B9E7F127B8BDF40038136D /* ErrorResponse.swift in Sources */,
 				BC1868ED2799384E00033B79 /* RegistrationScene.swift in Sources */,
@@ -1145,7 +1149,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "http://110.234.2.235/api";
+				BASE_URL = "http://110.234.2.235/api/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
@@ -1297,7 +1301,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "http://110.234.2.235/api";
+				BASE_URL = "http://110.234.2.235/api/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
@@ -1331,7 +1335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "http://110.234.2.235/api";
+				BASE_URL = "http://110.234.2.235/api/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
