@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9859920C27B8F16E00286FCC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859920B27B8F16E00286FCC /* String+Extension.swift */; };
 		98746364279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746362279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift */; };
 		98746365279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98746363279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib */; };
 		98746369279BF22A00AC3287 /* TransplantationDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98746368279BF22A00AC3287 /* TransplantationDetailCoordinator.swift */; };
@@ -31,6 +32,7 @@
 		988E751A27A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */; };
 		98B9E7F127B8BDF40038136D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9E7F027B8BDF40038136D /* ErrorResponse.swift */; };
 		98B9E7F327B8E5820038136D /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9E7F227B8E5820038136D /* RegisterRequest.swift */; };
+		98B9E7F527B8EBE40038136D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B9E7F427B8EBE40038136D /* UIViewController+Extension.swift */; };
 		98C2FCE3279F8A9F00A1E040 /* EmptyStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */; };
 		98C2FCE4279F8A9F00A1E040 /* EmptyStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */; };
 		98C2FCE8279F90AE00A1E040 /* TransplantationListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */; };
@@ -112,6 +114,7 @@
 		4F68D206E6AA0BB76D11BD10 /* Pods-Asa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa.release.xcconfig"; path = "Target Support Files/Pods-Asa/Pods-Asa.release.xcconfig"; sourceTree = "<group>"; };
 		53D42D08A99BB2210C932B71 /* Pods-Asa.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asa.local.xcconfig"; path = "Target Support Files/Pods-Asa/Pods-Asa.local.xcconfig"; sourceTree = "<group>"; };
 		8DD698C5E2B09584B66E62DE /* Pods_Asa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9859920B27B8F16E00286FCC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		98746362279BEA1800AC3287 /* TransplantationDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailTableViewCell.swift; sourceTree = "<group>"; };
 		98746363279BEA1800AC3287 /* TransplantationDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailTableViewCell.xib; sourceTree = "<group>"; };
 		98746368279BF22A00AC3287 /* TransplantationDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationDetailCoordinator.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 		988E751827A3F15600681437 /* TransplantationDetailDisabeldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransplantationDetailDisabeldTableViewCell.xib; sourceTree = "<group>"; };
 		98B9E7F027B8BDF40038136D /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		98B9E7F227B8E5820038136D /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		98B9E7F427B8EBE40038136D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		98C2FCE1279F8A9F00A1E040 /* EmptyStateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateTableViewCell.swift; sourceTree = "<group>"; };
 		98C2FCE2279F8A9F00A1E040 /* EmptyStateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateTableViewCell.xib; sourceTree = "<group>"; };
 		98C2FCE7279F90AE00A1E040 /* TransplantationListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransplantationListScene.swift; sourceTree = "<group>"; };
@@ -583,6 +587,8 @@
 				BCF1F775278FFE5A00CFD5C4 /* Localizable.strings */,
 				BCF1F768278FFDF800CFD5C4 /* UIColor+Extension.swift */,
 				BCF1F767278FFDF700CFD5C4 /* UIImage+Extension.swift */,
+				98B9E7F427B8EBE40038136D /* UIViewController+Extension.swift */,
+				9859920B27B8F16E00286FCC /* String+Extension.swift */,
 				BCF1F76A278FFDFC00CFD5C4 /* Assets+Extension.swift */,
 				BC718C08278DAD4700D7DDC6 /* LaunchScreen.storyboard */,
 			);
@@ -1037,9 +1043,11 @@
 				BCF1F7972790073300CFD5C4 /* AuthUseCase.swift in Sources */,
 				BCF1F75B278FFDDB00CFD5C4 /* Extension+UIColor.swift in Sources */,
 				BCF1F738278FF7AC00CFD5C4 /* K+Constant.swift in Sources */,
+				9859920C27B8F16E00286FCC /* String+Extension.swift in Sources */,
 				98CED47C279C413300BD548C /* ScheduleListTableViewCell.swift in Sources */,
 				BCF1F78E2790071200CFD5C4 /* UserData.swift in Sources */,
 				BCF1F75A278FFDDB00CFD5C4 /* Extension+UIViewController.swift in Sources */,
+				98B9E7F527B8EBE40038136D /* UIViewController+Extension.swift in Sources */,
 				BCF1F75E278FFDDB00CFD5C4 /* NetworkState.swift in Sources */,
 				98746376279BF39A00AC3287 /* TransplantationListTableViewCell.swift in Sources */,
 				BCF1F72A278FF5C700CFD5C4 /* AppConfiguration.swift in Sources */,
@@ -1149,7 +1157,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "http://110.234.2.235/api/";
+				BASE_URL = "http://110.234.2.235/api";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
@@ -1301,7 +1309,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "http://110.234.2.235/api/";
+				BASE_URL = "http://110.234.2.235/api";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
@@ -1335,7 +1343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BASE_AUTH_URL = "https://api.diabestie.com";
 				BASE_IMG_URL = "https://api.diabestie.com/assets/";
-				BASE_URL = "http://110.234.2.235/api/";
+				BASE_URL = "http://110.234.2.235/api";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YU42ADAZ46;
