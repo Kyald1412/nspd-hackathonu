@@ -1,8 +1,8 @@
 //
-//  RegistrationViewModel.swift
+//  HomeViewModel.swift
 //  Asa
 //
-//  Created by Dhiky Aldwiansyah on 20/01/22.
+//  Created by Jehnsen Hirena Kane on 27/01/22.
 //
 
 import Foundation
@@ -10,23 +10,24 @@ import SwiftyJSON
 import Combine
 import SwiftyUserDefaults
 
-final class RegistrationViewModel {
+final class HomeViewModel {
     
-    public weak var coordinator: RegistrationInterface?
-    private var authUseCase: AuthUseCase?
+    public weak var coordinator: HomeInterface?
     private var isRechable = CurrentValueSubject<Bool, Never>(false)
     
     var isLoading = CurrentValueSubject<Bool, Never>(false)
     var alertMessage: PassthroughSubject<String, Never> = PassthroughSubject()
     
-    var registrasiTitle = "juancug"
-    
-    init(coordinator: RegistrationInterface? = nil, authUseCase: AuthUseCase?) {
+    init(coordinator: HomeInterface? = nil) {
         self.coordinator = coordinator
-        self.authUseCase = authUseCase
 
         if NetworkState().isInternetAvailable {
             isRechable.send(true)
         }
     }
+    
+    func goToRegistration() {
+        self.coordinator?.goToRegistration(title: "Registrasi")
+    }
 }
+

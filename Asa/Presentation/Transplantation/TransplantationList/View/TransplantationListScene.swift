@@ -42,34 +42,19 @@ class TransplantationListScene: UIViewController, SceneStoryboardLoadable {
         tableViewOutlet.register(UINib(nibName: CallHelpTableViewCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: CallHelpTableViewCell.cellIdentifier())
         tableViewOutlet.register(UINib(nibName: TermsAndConditionsTableViewCell.cellIdentifier(), bundle: nil), forCellReuseIdentifier: TermsAndConditionsTableViewCell.cellIdentifier())
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension TransplantationListScene: UITableViewDataSource, UITableViewDelegate {
+extension TransplantationListScene: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return CGFloat(50)
-//    }
-//
+
     internal func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat(0)
     }
-//
 
     internal func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
@@ -79,9 +64,10 @@ extension TransplantationListScene: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: EmptyStateTableViewCell.cellIdentifier()) else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TransplantationListTableViewCell.cellIdentifier()) else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = .blue
             return cell
         } else if indexPath.section == 1 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: NewRegistrationTableViewCell.cellIdentifier()) else {
@@ -102,6 +88,10 @@ extension TransplantationListScene: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
     }
-    
-    
+}
+
+extension TransplantationListScene: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hahaha")
+    }
 }

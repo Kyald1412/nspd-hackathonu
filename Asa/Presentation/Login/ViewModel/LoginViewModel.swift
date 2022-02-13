@@ -9,12 +9,15 @@ import Foundation
 import SwiftyJSON
 import Combine
 import SwiftyUserDefaults
+import Moya
 
 final class LoginViewModel {
     
     public weak var coordinator: LoginInteface?
     private var authUseCase: AuthUseCase?
     private var isRechable = CurrentValueSubject<Bool, Never>(false)
+    let provider = MoyaProvider<AuthService>()
+
     
     var isLoading = CurrentValueSubject<Bool, Never>(false)
     var alertMessage: PassthroughSubject<String, Never> = PassthroughSubject()

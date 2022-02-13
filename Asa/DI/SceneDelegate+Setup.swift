@@ -36,18 +36,31 @@ extension SceneDelegate {
         container.register(TransplantationListViewModel.self) { r in
             TransplantationListViewModel()
         }
+        container.register(HomeViewModel.self) { r in
+            HomeViewModel()
+        }
+        container.register(TransplantationDetailViewModel.self) { r in
+            TransplantationDetailViewModel()
+        }
     }
     
     // MARK: - View Controllers
     internal func setupViewController() {
         container.storyboardInitCompleted(LoginScene.self) { resolver, controller in
-            controller.loginViewModel = resolver.resolve(LoginViewModel.self)
+            controller.loginVM = resolver.resolve(LoginViewModel.self)
         }
         container.storyboardInitCompleted(RegistrationScene.self) { resolver, controller in
             controller.registrationViewModel = resolver.resolve(RegistrationViewModel.self)
         }
         container.storyboardInitCompleted(TransplantationListScene.self) { resolver, controller in
             controller.transplantationListViewModel = resolver.resolve(TransplantationListViewModel.self)
+        }
+        container.storyboardInitCompleted(HomeScene.self) { resolver, controller in
+            controller.homeViewModel = resolver.resolve(HomeViewModel.self)
+            
+        }
+        container.storyboardInitCompleted(TransplantationDetailScene.self) { resolver, controller in
+            controller.transplantationDetailViewModel = resolver.resolve(TransplantationDetailViewModel.self)
         }
     }
     

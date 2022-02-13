@@ -32,8 +32,9 @@ final class AppCoordinator: BaseCoordinator {
     // MARK: - Init
     override func start() {
 //        if isLoggedIn {
-//            runLoginFlow()
-        runTransplantationListFlow()
+            runLoginFlow()
+//        runTransplantationListFlow()
+//        runHomeFlow()
 //        } else {
 //            runLoginFlow()
 //        }

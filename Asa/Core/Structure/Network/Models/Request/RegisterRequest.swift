@@ -1,25 +1,25 @@
 //
-//  LoginRequest.swift
+//  RegisterRequest.swift
 //  Asa
 //
-//  Created by Dhiky Aldwiansyah on 28/05/21.
+//  Created by Jehnsen Hirena Kane on 13/02/22.
 //
 
 import Foundation
 
-// MARK: - Data Transfer Object
-public class LoginRequest : NSObject{
-    
+public class RegisterRequest: NSObject {
     public var email : String!
     public var password : String!
     public var deviceId : String!
-//    public var referral : String!
+    public var fname: String!
+    public var gender: String!
 
-    public init(email: String, password: String, deviceId: String) { //}, referral: String) {
+    public init(email: String, password: String, deviceId: String, fname: String, gender: String) {
         self.email = email
         self.password = password
         self.deviceId = deviceId
-//        self.referral = referral
+        self.fname = fname
+        self.gender = gender
     }
     
     func toDictionary() -> [String:Any]
@@ -34,9 +34,12 @@ public class LoginRequest : NSObject{
         if deviceId != nil{
             dictionary["device_id"] = deviceId
         }
-//        if referral != nil{
-//            dictionary["referral"] = referral
-//        }
+        if fname != nil {
+            dictionary["fname"] = fname
+        }
+        if gender != nil {
+            dictionary["gender"] = gender
+        }
         return dictionary
     }
 }

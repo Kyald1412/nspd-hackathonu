@@ -10,6 +10,8 @@ import Moya
 
 public enum AuthService {
     case login(loginRequest: LoginRequest)
+    case register(registerRequest: RegisterRequest)
+    case logout
 }
 
 extension AuthService: TargetType {
@@ -17,6 +19,10 @@ extension AuthService: TargetType {
     public var authorizationType: AuthorizationType? {
         switch self {
         case .login:
+            return .bearer
+        case .register:
+            return .bearer
+        case .logout:
             return .bearer
         }
     }
@@ -28,13 +34,21 @@ extension AuthService: TargetType {
     public var path: String {
         switch self {
         case .login:
-            return "auth/login"
+            return "v1/auth/login"
+        case .register:
+            return "v1/auth/register"
+        case .logout:
+            return "v1/logout"
         }
     }
     
     public var method: Moya.Method {
         switch self {
         case .login:
+            return .post
+        case .register:
+            return .post
+        case .logout:
             return .post
         }
     }
@@ -43,6 +57,10 @@ extension AuthService: TargetType {
         switch self {
         case .login(let loginRequest):
             return .requestParameters(parameters: loginRequest.toDictionary(), encoding: JSONEncoding.default)
+        case .register(let registerRequest):
+            return .requestParameters(parameters: registerRequest.toDictionary(), encoding: JSONEncoding.default)
+        case .logout:
+            return .requestPlain
         }
     }
     
@@ -53,7 +71,7 @@ extension AuthService: TargetType {
             return ["Content-Type": "application/json; charset=utf-8",
                     "Accept": "application/json; charset=utf-8",
                     "APP-KEY":AppConfiguration.apiKey]
-//                    "Authorization": KeychainWrapper.shared.getAuthToken()]
+            //                    "Authorization": KeychainWrapper.shared.getAuthToken()]
         }
         
     }
@@ -66,10 +84,24 @@ extension AuthService: TargetType {
         switch self {
         case .login(_):
             let bundle = Bundle.main
-            guard let path = bundle.path(forResource: LoginResponseJson.LoginResponse.rawValue, ofType: "json"),
+            guard let path = bundle.path(forResource: AuthResponsesJSON.LoginResponse.rawValue, ofType: "json"),
                   let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) else {
-                return "".data(using: String.Encoding.utf8)!
-            }
+                      return "".data(using: String.Encoding.utf8)!
+                  }
+            return data
+        case .register(_):
+            let bundle = Bundle.main
+            guard let path = bundle.path(forResource: AuthResponsesJSON.RegisterResponse.rawValue, ofType: "json"),
+                  let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) else {
+                      return "".data(using: String.Encoding.utf8)!
+                  }
+            return data
+        case .logout:
+            let bundle = Bundle.main
+            guard let path = bundle.path(forResource: AuthResponsesJSON.LogoutResponse.rawValue, ofType: "json"),
+                  let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) else {
+                      return "".data(using: String.Encoding.utf8)!
+                  }
             return data
         }
     }

@@ -18,7 +18,6 @@ open class RegistrationCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 
     let navigationController: UINavigationController
     weak var delegate: RegistrationInterface?
-//    var registrasiTitle = ""
 
 
     // MARK: - Coordinator
@@ -67,6 +66,11 @@ open class RegistrationCoordinator: BaseCoordinator, CoordinatorFinishOutput {
 //        }
 //        addDependency(coordinator)
 //        coordinator.start()
+    }
+    
+    func getRegistration() -> RegistrationScene {
+        let viewController = container.resolveViewController(RegistrationScene.self)
+        return viewController
     }
 }
 

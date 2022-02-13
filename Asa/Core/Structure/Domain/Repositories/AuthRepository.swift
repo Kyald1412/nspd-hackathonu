@@ -54,7 +54,7 @@ extension AuthRepository: AuthRepositoryProtocol {
     public func executeFetchLoginApi(email: String, password: String,deviceId: String, referral: String,
                               completion: @escaping (Result<UserData, Error>) -> Void){
         
-        let loginRequest = LoginRequest(email: email, password: password, deviceId: deviceId, referral: referral)
+        let loginRequest = LoginRequest(email: email, password: password, deviceId: deviceId)
         
         authProvider.request(.login(loginRequest: loginRequest), completion: { result in
             

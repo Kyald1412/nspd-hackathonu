@@ -53,36 +53,23 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="82W-BR-s5g">
                                 <rect key="frame" x="16" y="155" width="382" height="658"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek4-cn-yH5">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Awal" image="house.fill" catalog="system" id="UqJ-ZL-Bie"/>
-                                    <tabBarItem title="Donorku" image="heart.fill" catalog="system" id="lEu-Bd-rSM"/>
-                                    <tabBarItem title="Jadwal" image="calendar" catalog="system" id="gtk-9S-gzo"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.94913643599999997" green="0.94872587919999996" blue="0.96863013509999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Ek4-cn-yH5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6hB-uM-4Zb"/>
                             <constraint firstItem="pXt-sY-YjB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7cc-xr-c5r"/>
-                            <constraint firstItem="Ek4-cn-yH5" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="BeP-5j-V9f"/>
                             <constraint firstItem="pXt-sY-YjB" firstAttribute="top" secondItem="KMU-js-PVh" secondAttribute="bottom" constant="6" id="CMz-Y3-cr4"/>
-                            <constraint firstItem="Ek4-cn-yH5" firstAttribute="top" secondItem="82W-BR-s5g" secondAttribute="bottom" id="F4p-JI-NgA"/>
                             <constraint firstItem="82W-BR-s5g" firstAttribute="top" secondItem="pXt-sY-YjB" secondAttribute="bottom" constant="24" id="O5d-kR-1R9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KMU-js-PVh" secondAttribute="trailing" id="QcS-BW-gGi"/>
                             <constraint firstItem="82W-BR-s5g" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="RgE-dC-xXT"/>
-                            <constraint firstItem="Ek4-cn-yH5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dT7-Th-acY"/>
-                            <constraint firstItem="Ek4-cn-yH5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="iGS-wl-QbS"/>
+                            <constraint firstItem="82W-BR-s5g" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="TNl-CY-NGA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pXt-sY-YjB" secondAttribute="trailing" constant="16" id="txY-ri-jdW"/>
                             <constraint firstItem="KMU-js-PVh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="uLs-eC-sVi"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="82W-BR-s5g" secondAttribute="trailing" constant="16" id="y5r-q7-qh4"/>
                         </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="notificationOutlet" destination="KMU-js-PVh" id="nEW-jF-CBR"/>
                         <outlet property="profilePictureOutlet" destination="cUJ-Bz-fSV" id="DDc-eD-9VD"/>
@@ -91,15 +78,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="135"/>
+            <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
         </scene>
     </scenes>
     <resources>
         <image name="bell.fill" catalog="system" width="128" height="124"/>
-        <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="foto_profile" width="36" height="36"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
